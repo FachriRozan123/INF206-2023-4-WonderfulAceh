@@ -16,3 +16,11 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('app');
 });
+
+Route::get('/nama_category', function () {
+    return view('nama_category');
+});
+
+Route::get('/category', function () {
+    return view('category');
+});
