@@ -4,6 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
+<<<<<<< HEAD
     "content-hash": "d78a14ea4f1f25c3dd88d8372b8ac009",
     "packages": [
         {
@@ -61,6 +62,11 @@
             "time": "2022-12-07T17:46:57+00:00"
         },
         {
+=======
+    "content-hash": "121ea3a2fffe49b3ef9aa4d064b28c19",
+    "packages": [
+        {
+>>>>>>> 2108107010025
             "name": "brick/math",
             "version": "0.10.2",
             "source": {
@@ -117,6 +123,7 @@
             "time": "2022-08-10T22:54:19+00:00"
         },
         {
+<<<<<<< HEAD
             "name": "dasprid/enum",
             "version": "1.0.4",
             "source": {
@@ -167,6 +174,8 @@
             "time": "2023-03-01T18:44:03+00:00"
         },
         {
+=======
+>>>>>>> 2108107010025
             "name": "dflydev/dot-access-data",
             "version": "v3.0.2",
             "source": {
@@ -1086,6 +1095,7 @@
             "time": "2021-10-07T12:57:01+00:00"
         },
         {
+<<<<<<< HEAD
             "name": "jaybizzle/crawler-detect",
             "version": "v1.2.114",
             "source": {
@@ -1284,6 +1294,8 @@
             "time": "2023-01-06T15:57:08+00:00"
         },
         {
+=======
+>>>>>>> 2108107010025
             "name": "laravel/framework",
             "version": "v10.6.1",
             "source": {
@@ -1484,6 +1496,7 @@
             "time": "2023-04-04T20:58:15+00:00"
         },
         {
+<<<<<<< HEAD
             "name": "laravel/jetstream",
             "version": "v3.1.0",
             "source": {
@@ -1553,6 +1566,8 @@
             "time": "2023-03-20T11:33:10+00:00"
         },
         {
+=======
+>>>>>>> 2108107010025
             "name": "laravel/sanctum",
             "version": "v3.2.1",
             "source": {
@@ -2081,6 +2096,7 @@
             "time": "2022-04-17T13:12:02+00:00"
         },
         {
+<<<<<<< HEAD
             "name": "livewire/livewire",
             "version": "v2.12.3",
             "source": {
@@ -2210,6 +2226,8 @@
             "time": "2022-11-08T18:31:26+00:00"
         },
         {
+=======
+>>>>>>> 2108107010025
             "name": "monolog/monolog",
             "version": "3.3.1",
             "source": {
@@ -2704,6 +2722,7 @@
             "time": "2023-02-08T01:06:31+00:00"
         },
         {
+<<<<<<< HEAD
             "name": "paragonie/constant_time_encoding",
             "version": "v2.6.3",
             "source": {
@@ -2771,6 +2790,8 @@
             "time": "2022-06-14T06:56:20+00:00"
         },
         {
+=======
+>>>>>>> 2108107010025
             "name": "phpoption/phpoption",
             "version": "1.9.1",
             "source": {
@@ -2846,6 +2867,7 @@
             "time": "2023-02-25T19:38:58+00:00"
         },
         {
+<<<<<<< HEAD
             "name": "pragmarx/google2fa",
             "version": "v8.0.1",
             "source": {
@@ -2898,6 +2920,8 @@
             "time": "2022-06-13T21:57:56+00:00"
         },
         {
+=======
+>>>>>>> 2108107010025
             "name": "psr/container",
             "version": "2.0.2",
             "source": {
