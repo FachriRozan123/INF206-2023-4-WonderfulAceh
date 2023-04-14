@@ -26,3 +26,15 @@ Route::middleware([
         return view('dashboard');
     })->name('dashboard');
 });
+Route::get('/category', function () {
+    return view('category');
+});
+Route::get('/search', function () {
+    return view('search');
+});
+Route::get('/addTempat', function () {
+    return view('addTempat');
+});
+Route::get('/addTourGuide', function () {
+    return view('addTourGuide');
+});
