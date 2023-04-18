@@ -11,7 +11,7 @@
          <div class="relative">
 
             <div class="w-10 h-19 bg-white rounded-full flex  justify-center absolute -top-[180px] right-5 cursor-pointer">
-               <img src="cross.png">
+               <img src="img/cross.png">
             </div>
       </div>
 
