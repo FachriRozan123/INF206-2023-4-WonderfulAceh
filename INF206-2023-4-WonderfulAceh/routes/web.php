@@ -14,9 +14,17 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('app');
 });
 
+<<<<<<< HEAD
+Route::get('/nama_category', function () {
+    return view('nama_category');
+});
+
+Route::get('/category', function () {
+    return view('category');
+=======
 Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),
@@ -37,4 +45,5 @@ Route::get('/addTempat', function () {
 });
 Route::get('/addTourGuide', function () {
     return view('addTourGuide');
+>>>>>>> main
 });
