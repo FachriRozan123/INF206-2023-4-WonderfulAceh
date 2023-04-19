@@ -13,7 +13,7 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-light " style="background-color: #2b6363;">
             <div class="container-fluid">
-                <img src="logowondeful.png" style="height: 3%; width: 3%;">
+                <img src="img/logowondeful.png" style="height: 3%; width: 3%;">
                 <a class="navbar-brand">Wonderful Aceh
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -72,7 +72,7 @@
                     <div
                       style="display: inline-block; height: 300px; width: 1500px; background-color: white; border-radius: 0%; overflow: hidden; padding: 50px;">
                             <a href=".html" class="text-decoration-none">
-                          <img src="pantai.jpg" style="height: 400px; width: 30%;">
+                          <img src="img/pantai.jpg" style="height: 400px; width: 30%;">
                        </div>
                     </div>
                 </div>
@@ -87,9 +87,9 @@
                         Nama Tempat
                     </h1>
                     <div style="display: flex; height: 200px; width: 320px; background-color: rgb(255, 253, 253); border-radius: 0%; overflow: hidden; padding: 15px;">
-                    <img src="user.png" style="height: 110px; width: 40%;">
+                    <img src="img/user.png" style="height: 110px; width: 40%;">
                     <h3 style="color: black;">Nama</h3>
-                    <img src="chat.png" style="height: 60px; width: 30%; margin-top: 100px;">
+                    <img src="img/chat.png" style="height: 60px; width: 30%; margin-top: 100px;">
                 </div>
                 </a>
             </div>
@@ -99,7 +99,7 @@
                         Tour Guide
                     </h1>
                     <div style="display: flex; height: 200px; width: 320px; background-color: rgb(255, 253, 253); border-radius: 0%; overflow: hidden; padding: 15px;">
-                        <img src="user.png" style="height: 110px; width: 40%;">
+                        <img src="img/user.png" style="height: 110px; width: 40%;">
                         <h3 style="color: black;">Nama</h3>
                         <img src="chat.png" style="height: 60px; width: 30%; margin-top: 100px;">
                     </div>
