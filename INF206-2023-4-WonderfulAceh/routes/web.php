@@ -14,7 +14,6 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-<<<<<<< HEAD
     return view('welcome');
 });
 
@@ -26,7 +25,16 @@ Route::middleware([
     Route::get('/dashboard', function () {
         return view('dashboard');
     })->name('dashboard');
-=======
-    return view('app');
->>>>>>> 2108107010025
+});
+Route::get('/category', function () {
+    return view('category');
+});
+Route::get('/search', function () {
+    return view('search');
+});
+Route::get('/addTempat', function () {
+    return view('addTempat');
+});
+Route::get('/addTourGuide', function () {
+    return view('addTourGuide');
 });

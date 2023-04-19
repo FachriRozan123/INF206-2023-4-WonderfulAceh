@@ -1,7 +1,7 @@
 @tailwind base;
 @tailwind components;
-<<<<<<< HEAD
 @tailwind utilities;
-=======
-@tailwind utilities;
->>>>>>> 2108107010025
+
+[x-cloak] {
+    display: none;
+}
