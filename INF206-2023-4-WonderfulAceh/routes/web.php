@@ -24,3 +24,7 @@ Route::get('/nama_category', function () {
 Route::get('/category', function () {
     return view('category');
 });
+
+Route::get('/thisorthat', function () {
+    return view('thisorthat');
+});

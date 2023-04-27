@@ -10,6 +10,7 @@
     <script src="https://kit.fontawesome.com/348c676099.js" crossorigin="anonymous"></script>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-light " style="background-color: #2b6363;">
@@ -70,7 +71,7 @@
     </p>
     <div class="container mx-auto max-w-[1000pt] flex flex-col sm:flex-row h-[80pt] ">
         <div class="container max-w-[200pt] bg-[#908B8B] flex justify-center">
-            <img class="scale-50" src="gallery.png">
+            <img class="h-full w-full object-cover" src="img/mountain.jpg">
 
         </div>
         <div class="container bg-[#C4C4C4] grid grid-cols-4 grid-rows-3 items-center">
@@ -83,7 +84,7 @@
 
     <div class="container mx-auto max-w-[1000pt] flex flex-col sm:flex-row h-[80pt] mt-[30pt]">
         <div class="container max-w-[200pt] bg-[#908B8B] flex justify-center">
-            <img class="scale-50" src="gallery.png">
+        <img class="h-full w-full object-cover" src="img/sungai.jpeg">
         </div>
 
         <div class="container bg-[#C4C4C4] grid grid-cols-4 grid-rows-3 items-center">
@@ -92,6 +93,7 @@
             <div class="col-start-1 row-start-3 ml-10">0.0/5.0 :</div>
         </div>
     </div>
+        <br>
         <br>
         <br>
         <br>
