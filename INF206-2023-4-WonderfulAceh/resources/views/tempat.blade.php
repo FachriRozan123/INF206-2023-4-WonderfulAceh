@@ -70,15 +70,23 @@
                 <div class="col" style="position: relative; left: 20px;">
                   <a href=".html" class="text-decoration-none">
                     <div
-                      style="display: inline-block; height: 300px; width: 1500px; background-color: white; border-radius: 0%; overflow: hidden; padding: 50px;">
-                            <a href=".html" class="text-decoration-none">
-                          <img src="img/pantai.jpg" style="height: 400px; width: 30%;">
+                      style="display: inline-block; height: 300px; width: 1420px; background-color: white; border-radius: 0%; overflow: hidden; padding: 6px;">
+                      <a href=".html" class="text-decoration-none">
+                          <img src="img/pantai.jpg" style="height: 270px; width: 25%; margin-top: 10px;">
+                          </a>
+                          <div style="position: absolute; top: 40px; left: 27%; text-align: center;">
+                            <h4>Nama:</h4>
+                            <div style="position: absolute; top: 60px; text-align: center;">
+                            <h4>Kategori:</h4>
+                            <div style="position: absolute; top: 60px; text-align: center;">
+                            <h4>Deskripsi:</h4>
                        </div>
+                       </div>
+                       </div>
+                       </a>
                     </div>
                 </div>
              </div>
-        </div>
-        <br>
         <br>
         <div class="row" style="display: flex; justify-content: space-between;">
             <div class="col" style="position: relative; left: 20px;">
@@ -87,7 +95,7 @@
                         Nama Tempat
                     </h1>
                     <div style="display: flex; height: 200px; width: 320px; background-color: rgb(255, 253, 253); border-radius: 0%; overflow: hidden; padding: 15px;">
-                    <img src="img/user.png" style="height: 110px; width: 40%;">
+                    <img src="user.png" style="height: 110px; width: 40%;">
                     <h3 style="color: black;">Nama</h3>
                     <img src="img/chat.png" style="height: 60px; width: 30%; margin-top: 100px;">
                 </div>
@@ -101,7 +109,7 @@
                     <div style="display: flex; height: 200px; width: 320px; background-color: rgb(255, 253, 253); border-radius: 0%; overflow: hidden; padding: 15px;">
                         <img src="img/user.png" style="height: 110px; width: 40%;">
                         <h3 style="color: black;">Nama</h3>
-                        <img src="chat.png" style="height: 60px; width: 30%; margin-top: 100px;">
+                        <img src="img/chat.png" style="height: 60px; width: 30%; margin-top: 100px;">
                     </div>
                 </a>
             </div>
