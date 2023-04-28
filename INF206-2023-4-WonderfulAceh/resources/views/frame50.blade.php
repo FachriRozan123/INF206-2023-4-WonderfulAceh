@@ -11,7 +11,7 @@
     </p>
     <div class="container mx-auto max-w-[1000pt] flex flex-col sm:flex-row h-[80pt] ">
         <div class="container max-w-[200pt] bg-[#908B8B] flex justify-center">
-            <img class="scale-50" src="gallery.png">
+            <img class="scale-50" src="img/gallery.png">
 
         </div>
         <div class="container bg-[#C4C4C4] grid grid-cols-4 grid-rows-3 items-center">
@@ -24,7 +24,7 @@
 
     <div class="container mx-auto max-w-[1000pt] flex flex-col sm:flex-row h-[80pt] mt-[30pt]">
         <div class="container max-w-[200pt] bg-[#908B8B] flex justify-center">
-            <img class="scale-50" src="gallery.png">
+            <img class="scale-50" src="img/gallery.png">
 
         </div>
         <div class="container bg-[#C4C4C4] grid grid-cols-4 grid-rows-3 items-center">
