@@ -19,7 +19,7 @@ return new class extends Migration
         $table->string('nomor_pemilik');
         $table->string('kategori');
         $table->text('deskripsi');
-        $table->string('image');
+        $table->string('image')->nullable();
         $table->timestamps();
     });
     

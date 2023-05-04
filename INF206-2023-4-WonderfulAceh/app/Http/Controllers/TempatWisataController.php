@@ -17,29 +17,20 @@ class TempatWisataController extends Controller
     }
     public function create()
     {
-        //
-        $users=DB::table('users')->get()->pluck('name','id')->prepend('none');
-        $tempat_wisata=DB::table('tempat_wisata')->get()->pluck('number','id');
-        return view('bookings.create')
-        ->with('users',$users)
-        ->with('$tempat_wisata',$tempat_wisata);
+        return view('holiday.addTempat');
     }
     public function store(Request $request)
     {
-        //
-        $id=DB::table('tempat_wisata')->insertGetId([
-            'nama_tempat'=>$request->input('nama_tempat'),
-            'alamat'=>$request->input('alamat'),
-            'nama_pemilik'=>$request->input('nama_pemilik'),
-            'nomor_pemilik'=>$request->input('nomor_pemilik'),
-            'kategori'=>$request->input('kategori'),
-            'deskripsi'=>$request->input('deskripsi')
-        ]); 
-
-    //     DB::table('bookings_users')->insert([
-    //         'booking_id'=>$id,
-    //         'user_id'=>$request->input('user_id')
-    //     ]);
+        TempatWisata::create([
+            'nama_tempat'=>$request['nama_tempat'],
+            'alamat'=>$request['alamat'],
+            'nama_pemilik'=>$request['nama_pemilik'],
+            'nomor_pemilik'=>$request['nomor_pemilik'],
+            'kategori'=>$request['kategori'],
+            'deskripsi'=>$request['deskripsi'],
+            'image'=>$request['image']
+        ]);
+        return redirect('/');
     }
 
 }

@@ -1,51 +1,6 @@
-.card {
-    border-radius: 10px;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    padding: 16px;
-    width: 80%;
-    background-color: #fff;
-    text-align: center;
-    margin: 10px;
-    display: flex;
-    align-items: center;
-  }
-  
-  .card-image {
-    float: left;
-    width: 40%;
-    margin-right: 20px;
-  }
-  
-  .card-image img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-  }
-  
-  .card-content {
-    float: right;
-    width: 50%;
-    text-align: left;
-  }
-  
-  .card h2 {
-    font-size: 24px;
-    margin-top: 0;
-    margin-bottom: 16px;
-  }
-  
-  .card p {
-    font-size: 18px;
-    color: #f44336;
-    margin-top: 0;
-    margin-bottom: 8px;
-  }
-  
-  .card p:last-child {
-    color: #999;
-    margin-bottom: 16px;
-  }
-  
-  h1{
+.white-text {
     color: #fff;
-  }
+}
+.black-text {
+    color: #000;
+}
