@@ -139,11 +139,19 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse ml-auto" id="navbarCollapse">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-                <a class="navbar-brand" href="{{ url('/') }}">
-                    Wonderful Aceh
-                </a>
+  <ul class="navbar-nav mr-auto">
+    <li class="nav-item">
+      <a class="navbar-brand" href="{{ url('/') }}">
+        <div class="d-flex align-items-center">
+          <img src="img/logowondeful.png" style="height: 50%; width: 7%;">
+          <span class="ml-2">Wonderful Aceh</span>
+        </div>
+      </a>
+    </li>
+  </ul>
+</div>
+
+              
             </li>
           </ul>
           <ul class="navbar-nav ml-auto">
@@ -155,8 +163,8 @@
                   Daftar
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="/addTempat">Tempat Wisata</a>
-                  <a class="dropdown-item" href="/addTourGuide">Tour Guide</a>
+                  <a class="dropdown-item" href="{{ route('holiday.create') }}">Tempat Wisata</a>
+                  <a class="dropdown-item" href="{{ route('tour_guide.create') }}">Tour Guide</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="/thisorthat">This or That</a>

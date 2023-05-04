@@ -1,7 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\TempatWisataController ;
+use App\Http\Controllers\TempatWisataController;
+use App\Http\Controllers\TourGuideController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -52,6 +53,15 @@ Route::get('/nama_category', function () {
 // Route::get('/register', function () {
 //     return view('register');
 // });
-Route::get('/frame50', function () {
-    return view('frame50');
+Route::get('/rekomendasi', function () {
+    return view('rekomendasi');
 });
+
+Route::get('/chattourguide', function () {
+    return view('chattourguide');
+});
+
+Route::get('/chatpemiliktempat', function () {
+    return view('chatpemiliktempat');
+});
+Route::resource('tour_guide',TourGuideController::class);
