@@ -3,30 +3,30 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\TempatWisata;
+use App\Models\TourGuide;
 use Illuminate\Support\Facades\DB;
 
-class TempatWisataController extends Controller
+class TourGuideController extends Controller
 {   
     public function index()
     {
         //
-        $tempat_wisata=DB::table('tempat_wisata')->get();
-            return view('holiday.index')
-            ->with('tempat_wisata',$tempat_wisata);
+        $tour_guide=DB::table('tour_guide')->get();
+            return view('tour_guide.index')
+            ->with('tour_guide',$tour_guide);
     }
     public function create()
     {
-        return view('holiday.addTempat');
+        return view('tour_guide.addTourGuide');
     }
     public function store(Request $request)
     {
-        TempatWisata::create([
+        TourGuide::create([
             'nama_tempat'=>$request['nama_tempat'],
             'alamat'=>$request['alamat'],
-            'nama_pemilik'=>$request['nama_pemilik'],
-            'nomor_pemilik'=>$request['nomor_pemilik'],
-            'kategori'=>$request['kategori'],
+            'nama'=>$request['nama'],
+            'nomor_hp'=>$request['nomor_hp'],
+            'nama_tempat'=>$request['nama_tempat'],
             'deskripsi'=>$request['deskripsi'],
             'image'=>$request['image']
         ]);

@@ -1,7 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\TempatWisataController ;
+use App\Http\Controllers\TempatWisataController;
+use App\Http\Controllers\TourGuideController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -63,3 +64,4 @@ Route::get('/chattourguide', function () {
 Route::get('/chatpemiliktempat', function () {
     return view('chatpemiliktempat');
 });
+Route::resource('tour_guide',TourGuideController::class);
