@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\TempatWisataController ;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -35,6 +35,23 @@ Route::get('/search', function () {
 Route::get('/addTempat', function () {
     return view('addTempat');
 });
+Route::resource('holiday',TempatWisataController::class);
+
 Route::get('/addTourGuide', function () {
     return view('addTourGuide');
+});
+Route::get('/thisorthat', function () {
+    return view('thisorthat');
+});
+Route::get('/nama_category', function () {
+    return view('nama_category');
+});
+// Route::get('/login', function () {
+//     return view('login');
+// });
+// Route::get('/register', function () {
+//     return view('register');
+// });
+Route::get('/frame50', function () {
+    return view('frame50');
 });
