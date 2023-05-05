@@ -24,7 +24,7 @@ Route::middleware([
 ])->group(function () {
     Route::get('/dashboard', function () {
         return view('dashboard');
-    })->name('dashboard');
+    })->name('dashboard'); 
 });
 Route::get('/category', function () {
     return view('category');
@@ -45,6 +45,9 @@ Route::get('/thisorthat', function () {
 });
 Route::get('/nama_category', function () {
     return view('nama_category');
+});
+Route::get('/tempat', function () {
+    return view('tempat');
 });
 // Route::get('/login', function () {
 //     return view('login');
