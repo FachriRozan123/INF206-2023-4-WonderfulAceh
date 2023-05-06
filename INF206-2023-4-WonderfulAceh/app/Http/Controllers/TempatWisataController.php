@@ -21,6 +21,10 @@ class TempatWisataController extends Controller
     }
     public function store(Request $request)
     {
+       if($request->file('image')){
+            $link = 'img/'.time().'-'.$request->image->getClientOriginalName();
+            $request->image->move('storage/img', $link);
+       }
         TempatWisata::create([
             'nama_tempat'=>$request['nama_tempat'],
             'alamat'=>$request['alamat'],
@@ -28,7 +32,7 @@ class TempatWisataController extends Controller
             'nomor_pemilik'=>$request['nomor_pemilik'],
             'kategori'=>$request['kategori'],
             'deskripsi'=>$request['deskripsi'],
-            'image'=>$request['image']
+            'image'=>$link
         ]);
         return redirect('/');
     }

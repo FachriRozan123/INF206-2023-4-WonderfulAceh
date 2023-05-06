@@ -4,7 +4,7 @@
     <div class="col">
         <!-- <div class="white-text"> -->
         <h2>DAFTAR TEMPAT WISATA</h2>
-        <form action="{{ route('holiday.store') }}" method="POST">
+        <form action="{{ route('holiday.store') }}" method="POST" enctype="multipart/form-data">
             @csrf
             <div class="form-group row">
                 <label for="image">Image</label>
