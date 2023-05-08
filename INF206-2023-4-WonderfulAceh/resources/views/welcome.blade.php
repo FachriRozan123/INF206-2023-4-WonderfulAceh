@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 @extends('layouts.app')
 @section('content')
 <!DOCTYPE html>
@@ -25,6 +26,27 @@
             <a href="#" class="bg- inline-block px-12 py-2 rounded border border-gray-300 text-white font-bold hover:text-white transition duration-300">Jelajahi Destinasi</a>
 </div>
 </head>
+=======
+</head>
+<head>
+<body style="background-image: url('bg.jpg');">
+  <!-- elemen-elemen lainnya -->
+>>>>>>> Stashed changes
 </body>
-</html>
-@endsection
+
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+  </style>
+<section>
+            <h1>Wonderful Aceh</h1>
+			<h2>Jelajahi Keindahan Wisata Aceh</h2>
+			<p>Temukan keindahan alam dan budaya Aceh yang memukau!</p>
+			<a href="#" class="btn">Jelajahi Destinasi</a>
+</section>
+</head>
