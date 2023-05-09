@@ -58,3 +58,6 @@ Route::get('/tempat', function () {
 Route::get('/frame50', function () {
     return view('frame50');
 });
+Route::get('/AboutUs', function () {
+    return view('AboutUs');
+});
