@@ -1,9 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-@extends('layouts.app')
-@section('content')
-=======
->>>>>>> 2108107010025
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,10 +8,8 @@
     <title>Document</title>
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
-</head>
-<head>
-  <body>
-  <header class="bg-teal-800 top-0 z-30 w-full px-2 sm:px-4 shadow-xl">
+
+    <header class="bg-teal-800 top-0 z-30 w-full px-2 sm:px-4 shadow-xl">
     <div class="flex flex-wrap items-center justify-between py-4">
         <div class="flex w-1/2 md:w-auto">
         <img src="img/logowondeful.png" style="height: 50%; width: 7%;">
@@ -37,7 +29,6 @@
         <div class="hidden md:block w-full md:w-auto md:rounded-xl font-normal" id="menu">
             <nav
                 class="lg:w-full md:w-full sm:text-left  bg-sky-800 md:bg-transparent rounded mt-4 sm:mt-0 text-center md:p-0 md:mt-0 md:shadow-none">
-
                 <ul class="md:flex : items-center">
                     <li class="md:ml-4"><a
                             class="text-xl py-2 sm:mt-4 md:mt-0 lg:mt-0 xl:mt-0 inline-block  text-white font-medium hover:bg-sky-100 lg:hover:bg-transparent lg:border-10 hover:w-full px-2 hover:text-teal-950"
@@ -48,10 +39,7 @@
                     <li class="md:ml-4"><a
                             class="text-xl py-2 inline-block text-white font-medium hover:bg-sky-100 lg:hover:bg-transparent lg:border-0 hover:w-full px-2 hover:text-teal-950"href="/login">Login</a>
                     </li>
-
-              
                 </ul>
-
             </nav>
         </div>
 
@@ -110,14 +98,12 @@
                         </svg>
                     </a>
                 </li>
-
-
             </ul>
         </div>
     </div>
-</header>
+    </header>
 
-  <style>
+    <style>
     body {
         background-image: url('https://www.toursabang.co.id/wp-content/uploads/2022/03/pantai.gif');
         background-size: cover;
@@ -125,60 +111,17 @@
         height: 100vh;
     }
   </style>
-<div style="margin: 35px; font-size:24px; text-align: justify;">
-    <p style="font-weight: bold; font-family: 'Merriweather';"> 
-        Selamat datang di Wonderful Aceh! 
-        <br>Jelajahi keindahan alam dan budaya Aceh yang memukau. 
-        <br>Nikmati pesona wisata yang tak tertandingi dengan pengalaman yang tak terlupakan. 
-        <br>Temukan destinasi menakjubkan dan kenikmatan kuliner yang lezat.
-        <br>
-    </p>
-    <a href="/nama_category" class="bg- inline-block bg-teal-800 px-12 py-2 rounded-full text-lg border-gray-300 text-white font-bold hover:text-teal-950 transition duration-300 ">Jelajahi Destinasi</a>
-</div>
-
-</head>
-=======
-</head>
-<head>
-<body style="background-image: url('bg.jpg');">
-  <!-- elemen-elemen lainnya -->
->>>>>>> Stashed changes
-<head>
-<body style="background-image: url('bg.jpg');">
-  <!-- elemen-elemen lainnya -->
-</body>
-
-  <style>
-    body {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-    }
-  </style>
-<section>
-            <h1>Wonderful Aceh</h1>
-			<h2>Jelajahi Keindahan Wisata Aceh</h2>
-			<p>Temukan keindahan alam dan budaya Aceh yang memukau!</p>
-			<a href="#" class="btn">Jelajahi Destinasi</a>
-</section>
 </head>
 
-  <style>
-    body {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-    }
-  </style>
-<section>
-            <h1>Wonderful Aceh</h1>
-			<h2>Jelajahi Keindahan Wisata Aceh</h2>
-			<p>Temukan keindahan alam dan budaya Aceh yang memukau!</p>
-			<a href="#" class="btn">Jelajahi Destinasi</a>
-</section>
-</head>
+<body>
+    <div style="margin: 35px; font-size:24px; text-align: justify;">
+        <p style="font-weight: bold; font-family: 'Merriweather';"> 
+            Selamat datang di Wonderful Aceh! 
+            <br>Jelajahi keindahan alam dan budaya Aceh yang memukau. 
+            <br>Nikmati pesona wisata yang tak tertandingi dengan pengalaman yang tak terlupakan. 
+            <br>Temukan destinasi menakjubkan dan kenikmatan kuliner yang lezat.
+            <br>
+        </p>
+        <a href="/nama_category" class="bg- inline-block bg-teal-800 px-12 py-2 rounded-full text-lg border-gray-300 text-white font-bold hover:text-teal-950 transition duration-300 ">Jelajahi Destinasi</a>
+    </div>
 </html>
