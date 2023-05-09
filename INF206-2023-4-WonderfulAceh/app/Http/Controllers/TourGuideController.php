@@ -20,7 +20,11 @@ class TourGuideController extends Controller
         return view('tour_guide.addTourGuide');
     }
     public function store(Request $request)
-    {
+    {   
+        if($request->file('image')){
+            $link = 'img/'.time().'-'.$request->image->getClientOriginalName();
+            $request->image->move('storage/img', $link);
+       }
         TourGuide::create([
             'nama_tempat'=>$request['nama_tempat'],
             'alamat'=>$request['alamat'],
@@ -28,7 +32,7 @@ class TourGuideController extends Controller
             'nomor_hp'=>$request['nomor_hp'],
             'nama_tempat'=>$request['nama_tempat'],
             'deskripsi'=>$request['deskripsi'],
-            'image'=>$request['image']
+            'image'=>$link
         ]);
         return redirect('/');
     }

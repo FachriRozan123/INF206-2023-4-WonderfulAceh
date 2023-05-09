@@ -94,29 +94,24 @@
             <div class="card card-block">
                 <h4 class="card-title text-center mt-3 mb-3"><i class="material-icons">Gunung</i></h4>
                 <img src="img/mountain.jpg" style="background-position: center; width: 290px; height: 195px;">
-                <p class="card-text mt-3 mb-3">Gunung merupakan objek wisata yang sangat populer di Aceh. Selain menjadi tempat pendakian yang menantang, gunung juga menawarkan keindahan alam yang memukau seperti pemandangan matahari terbit atau terbenam, hamparan awan yang menawan, dan keindahan panorama kota atau desa di bawahnya.</p> 
             </div>
         </div>
         <div class="col-md-3 col-sm-6">
             <div class="card card-block">
                 <h4 class="card-title text-center mt-3 mb-3"><i class="material-icons">Sungai</i></h4>
                 <img src="img/sungai.jpeg" style="background-position: center; width: 290px; height: 195px;">
-                <p class="card-text mt-3 mb-3">Sungai dapat menawarkan keindahan alam yang luar biasa, aktivitas air yang menyenangkan seperti arung jeram, dan kegiatan santai seperti berjalan-jalan atau piknik di sepanjang tepi sungai. Wisata sungai juga bisa menjadi cara yang baik untuk bersantai dan menikmati suasana tenang yang ditawarkan oleh aliran air yang mengalir. Beberapa sungai juga memiliki sejarah dan budaya yang kaya.</p> 
             </div>
         </div>
         <div class="col-md-3 col-sm-6">
             <div class="card card-block">
                 <h4 class="card-title text-center mt-3 mb-3"><i class="material-icons">Hutan</i></h4>
                 <img src="img/hutan.jpeg" style="background-position: center; width: 290px; height: 195px;">
-                <p class="card-text mt-3 mb-3">
-Hutan adalah salah satu destinasi wisata alam yang banyak diminati oleh wisatawan. Di hutan, kita dapat menikmati keindahan alam yang masih alami dan melihat beragam jenis flora dan fauna yang hidup di dalamnya. Hutan juga menyediakan tempat yang ideal untuk berbagai aktivitas seperti hiking, trekking, camping, dan lain sebagainya.</p> 
             </div>
         </div> 
         <div class="col-md-3 col-sm-6">
             <div class="card card-block">
                 <h4 class="card-title text-center mt-3 mb-3"><i class="material-icons">Pantai</i></h4>
                 <img src="img/pantai.jpg" style="background-position: center; width: 290px; height: 195px;">
-                <p class="card-text mt-3 mb-3">Pantai adalah destinasi dengan keindahan alamnya yang menakjubkan. Terdapat berbagai jenis pantai, mulai dari pantai pasir putih yang bersih dan air laut yang jernih hingga pantai batu yang eksotik dengan ombak yang besar. Pantai menawarkan berbagai aktivitas yang menyenangkan, seperti berenang, berselancar, memancing, berjemur di bawah matahari, atau hanya berjalan-jalan di tepi pantai sambil menikmati pemandangan yang indah.</p> 
             </div>
         </div> 
     </div>

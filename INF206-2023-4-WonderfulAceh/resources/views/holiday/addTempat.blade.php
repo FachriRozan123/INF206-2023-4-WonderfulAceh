@@ -1,10 +1,11 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="col">
+<div class="col">
+        {{-- {{dd($category[0]);}} --}}
         <!-- <div class="white-text"> -->
         <h2>DAFTAR TEMPAT WISATA</h2>
-        <form action="{{ route('holiday.store') }}" method="POST">
+        <form action="{{ route('holiday.store') }}" method="POST" enctype="multipart/form-data">
             @csrf
             <div class="form-group row">
                 <label for="image">Image</label>
@@ -44,7 +45,14 @@
                     <div class="form-group row">
                         <label class="col-sm-2 col-form-label" for="kategori">Kategori</label>
                         <div class="col-sm-10">
-                            <input name="kategori" type="text" class="form-control" />
+                            <input name="kategori" list="kategori" type="select" class="form-control"/>
+                            <datalist id="kategori">
+                                {{-- <select id="category" name="category"> --}}
+                                    @foreach ($category as $value)
+                                    <option value="{{ $value->category }}"></option>
+                                    @endforeach
+                                {{-- </select> --}}
+                            </datalist> 
                         </div>
                     </div>
                     <br>
