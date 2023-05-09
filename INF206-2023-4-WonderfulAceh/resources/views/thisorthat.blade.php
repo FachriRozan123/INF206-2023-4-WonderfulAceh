@@ -60,15 +60,9 @@
         </div>
         <br>
         <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
     </main>
-
-    <footer class="bg-white text-center pt-">
+    
+    <footer class="bg-white text-center">
         <p> Copyright 2023 &copy; WonderfulAceh</p>
     </footer>
 

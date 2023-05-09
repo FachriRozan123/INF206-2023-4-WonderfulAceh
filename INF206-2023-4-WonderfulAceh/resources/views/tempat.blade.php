@@ -1,3 +1,6 @@
+@extends('layouts.app')
+
+@section('content')
 <!doctype html>
 <html lang="en">
 
@@ -10,58 +13,7 @@
     <script src="https://kit.fontawesome.com/348c676099.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light " style="background-color: #2b6363;">
-            <div class="container-fluid">
-                <img src="img/logowondeful.png" style="height: 3%; width: 3%;">
-                <a class="navbar-brand">Wonderful Aceh
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-                    <ul class="navbar-nav mb-2 mb-lg-0">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">Daftar
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">Tempat Wisata</a></li>
-                                <li><a class="dropdown-item" href="#">Tour Guide</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active text-light" aria-current="page" href="#">Kategori</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active text-light" aria-current="page" href="#">This Or That</a>
-                        </li>
-                    </ul>
-                    <form class="d-flex" style="margin-right: 20px;">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
-                    <li class="nav-item dropdown" style="margin-right:30px;">
-                        <div style="position: relative; bottom:10px;" class="nav-link dropdown-toggle" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            <i class="fas fa-user-circle fa-2x me-2 text-white" style="list-style: none;"></i>
-                            <span class="text-white" style="position: relative;bottom: px;"></span>
-                        </div>
-                        <ul class="dropdown-menu dropdown-menu-end">
-                            <li><a class="dropdown-item" href="#">Profile</a></li>
-                            <li><a class="dropdown-item" href="#">Setting</a></li>
-                            <li><a class="dropdown-item" href="#">Log Out</a></li>
-                        </ul>
-                    </li>
-                </div>
-            </div>
-        </nav>
-    </header>
-
     <main style=" background-color:#1f4847  !important;">
-        <br>
         <div style="text-align:left;">
             <h1 style="font-size:2rem;color:rgb(255, 255, 255); padding-left: 20px;">
                 Nama Tempat
@@ -87,7 +39,6 @@
                     </div>
                 </div>
              </div>
-        <br>
         <div class="row" style="display: flex; justify-content: space-between;">
             <div class="col" style="position: relative; left: 20px;">
                 <a href=".html" class="text-decoration-none">
@@ -95,7 +46,7 @@
                         Nama Tempat
                     </h1>
                     <div style="display: flex; height: 200px; width: 320px; background-color: rgb(255, 253, 253); border-radius: 0%; overflow: hidden; padding: 15px;">
-                    <img src="user.png" style="height: 110px; width: 40%;">
+                    <img src="img/user.png" style="height: 110px; width: 40%;">
                     <h3 style="color: black;">Nama</h3>
                     <img src="img/chat.png" style="height: 60px; width: 30%; margin-top: 100px;">
                 </div>
@@ -118,9 +69,7 @@
         <br>
         <br>
         <br>
-        <br>
-        <br>
-        <br>
+        
     
     </main>
 
@@ -134,3 +83,4 @@
 </body>
 
 </html>
+@endsection

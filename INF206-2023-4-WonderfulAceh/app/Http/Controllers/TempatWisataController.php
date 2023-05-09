@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\TempatWisata;
+use App\Models\Category;
 use Illuminate\Support\Facades\DB;
 
 class TempatWisataController extends Controller
@@ -17,10 +18,24 @@ class TempatWisataController extends Controller
     }
     public function create()
     {
-        return view('holiday.addTempat');
+        $category = DB::table('category')->get();
+        return view('holiday.addTempat', ['category' => $category,]);
     }
     public function store(Request $request)
     {
+        $category = DB::table('category')
+    ->where('category', 'LIKE', '%' . $request->kategori . '%')
+    ->first();
+
+$category_id = null;
+
+if ($category) {
+    $category_id = $category->id;
+}        
+        // $array = Category::find('category',$request->category);
+        // dd($category);
+
+        // $request['category'] =$array->id;
        if($request->file('image')){
             $link = 'img/'.time().'-'.$request->image->getClientOriginalName();
             $request->image->move('storage/img', $link);
@@ -30,7 +45,7 @@ class TempatWisataController extends Controller
             'alamat'=>$request['alamat'],
             'nama_pemilik'=>$request['nama_pemilik'],
             'nomor_pemilik'=>$request['nomor_pemilik'],
-            'kategori'=>$request['kategori'],
+            'category_id'=>$category_id,
             'deskripsi'=>$request['deskripsi'],
             'image'=>$link
         ]);
