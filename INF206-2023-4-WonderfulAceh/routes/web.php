@@ -56,6 +56,7 @@ Route::get('/tempat', function () {
 // Route::get('/register', function () {
 //     return view('register');
 // });
+<<<<<<< HEAD
 Route::get('/rekomendasi', function () {
     return view('rekomendasi');
 });
@@ -68,3 +69,11 @@ Route::get('/chatpemiliktempat', function () {
     return view('chatpemiliktempat');
 });
 Route::resource('tour_guide',TourGuideController::class);
+=======
+Route::get('/frame50', function () {
+    return view('frame50');
+});
+Route::get('/AboutUs', function () {
+    return view('AboutUs');
+});
+>>>>>>> 2108107010025
