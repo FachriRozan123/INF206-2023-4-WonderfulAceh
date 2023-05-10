@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -32,59 +33,58 @@
     ></script>
    </head>
   <body>
- 
- <main class="w-screen h-screen p-5" style="background-color: #234741">
+  <main class="w-screen h-screen p-5" style="background-color: #234741">
     <p class="text-white ml-[100pt] text-xl font-bold font-serif p-2">
-        Rekomendasi untuk Anda
+        Nama Category
     </p>
-      <div class="card mb-3" style="max-width: 100%">
-        <div class="row">
-          <div class="col-auto">
-            <img
-              src="img/hutan.jpeg"
-              class="img-fluid rounded-start"
-              alt="Foto error"
-              style="background-position: center"
-            />
-          </div>
-          <div class="col">
-            <div class="card-body">
-              <h5 class="card-title">Nama :</h5>
-              <h5 class="card-title">Kategori :</h5>
-              <h5 class="card-title">0.0/0.5 :</h5>
-            </div>
+    <div class="card mb-3" style="max-width: 100%">
+      <div class="row">
+        <div class="col-auto">
+          <img
+            src="img/iboih.jpg"
+            class="img-fluid rounded-start"
+            alt="Foto error"
+            style="background-position: center; width: 280px; height: 180px;"
+          />
+        </div>
+        <div class="col">
+          <div class="card-body">
+            <h5 class="card-title">Nama :</h5>
+            <h5 class="card-title">Kategori :</h5>
+            <h5 class="card-title">0.0/0.5 :</h5>
           </div>
         </div>
       </div>
-      <div class="card mb-3" style="max-width: 100%">
-        <div class="row">
-          <div class="col-auto">
-            <img
-              src="img/hutan.jpeg"
-              class="img-fluid rounded-start"
-              alt="Foto error"
-              style="background-position: center"
-            />
-          </div>
-          <div class="col">
-            <div class="card-body">
-              <h5 class="card-title">Nama :</h5>
-              <h5 class="card-title">Kategori :</h5>
-              <h5 class="card-title">0.0/0.5 :</h5>
-            </div>
+    </div>
+    <div class="card mb-3" style="max-width: 100%">
+      <div class="row">
+        <div class="col-auto">
+          <img
+            src="img/lampuuk.jpg"
+            class="img-fluid rounded-start"
+            alt="Foto error"
+            style="background-position: center; width: 280px; height: 180px;"
+          />
+        </div>
+        <div class="col">
+          <div class="card-body">
+            <h5 class="card-title">Nama :</h5>
+            <h5 class="card-title">Kategori :</h5>
+            <h5 class="card-title">0.0/0.5 :</h5>
           </div>
         </div>
       </div>
-    </main>
-    <footer class="bg-white bg-opacity-50 text-center bottom-full">
-      <p>Copyright 2023 &copy; WonderfulAceh</p>
-    </footer>
+    </div>
+  </main>
+  <footer class="bg-white bg-opacity-50 text-center bottom-full">
+    <p>Copyright 2023 &copy; WonderfulAceh</p>
+  </footer>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"
+   ></script>
+</body>
 </html>
 @endsection

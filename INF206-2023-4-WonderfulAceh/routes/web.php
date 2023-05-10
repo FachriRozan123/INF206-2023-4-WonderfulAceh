@@ -1,8 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\TempatWisataController ;
-use App\Http\Controllers\TourGuideController ;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -26,27 +25,16 @@ Route::middleware([
     Route::get('/dashboard', function () {
         return view('dashboard');
     })->name('dashboard');
+    return view('app');
+});
+
+Route::get('/nama_category', function () {
+    return view('nama_category');
 });
 Route::get('/category', function () {
     return view('category');
 });
-Route::get('/search', function () {
-    return view('search');
-});
-Route::resource('holiday',TempatWisataController::class);
-Route::resource('tour_guide',TourGuideController::class);
+
 Route::get('/thisorthat', function () {
     return view('thisorthat');
-});
-Route::get('/nama_category', function () {
-    return view('nama_category');
-});
-// Route::get('/login', function () {
-//     return view('login');
-// });
-// Route::get('/register', function () {
-//     return view('register');
-// });
-Route::get('/frame50', function () {
-    return view('frame50');
 });

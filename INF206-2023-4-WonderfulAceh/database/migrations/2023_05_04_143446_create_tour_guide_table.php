@@ -16,9 +16,15 @@ return new class extends Migration
         $table->string('nama');
         $table->string('alamat');
         $table->string('nomor_hp');
+<<<<<<< HEAD
         $table->string('nama_tempat');
         $table->text('deskripsi');
         $table->string('image')->nullable();
+=======
+        $table->foreignId('nama_tempat_id');
+        $table->text('deskripsi');
+        $table->string('image');
+>>>>>>> main
         $table->timestamps();
     });
     
