@@ -16,7 +16,7 @@ use App\Http\Controllers\CategoryController;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('welcome'); 
 });
 
 Route::middleware([
@@ -69,4 +69,9 @@ Route::get('/chattourguide', function () {
 Route::get('/chatpemiliktempat', function () {
     return view('chatpemiliktempat');
 });
+
+Route::get('/AboutUs', function () {
+    return view('AboutUs');
+});
+
 Route::resource('tour_guide',TourGuideController::class);
