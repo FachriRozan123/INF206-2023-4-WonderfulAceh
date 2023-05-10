@@ -111,7 +111,6 @@
         height: 100vh;
     }
   </style>
-<<<<<<< Updated upstream
 </head>
 
 <body>
@@ -125,18 +124,8 @@
         </p>
         <a href="/nama_category" class="bg- inline-block bg-teal-800 px-12 py-2 rounded-full text-lg border-gray-300 text-white font-bold hover:text-teal-950 transition duration-300 ">Jelajahi Destinasi</a>
     </div>
+<<<<<<< Updated upstream
 </html>
 =======
-<div style="margin: 35px; font-size:24px; text-align: justify;">
-    <p style="font-weight: bold; font-family: 'Merriweather';"> 
-        Selamat datang di Wonderful Aceh! 
-        <br>Jelajahi keindahan alam dan budaya Aceh yang memukau. 
-        <br>Nikmati pesona wisata yang tak tertandingi dengan pengalaman yang tak terlupakan. 
-        <br>Temukan destinasi menakjubkan dan kenikmatan kuliner yang lezat.
-        <br>
-    </p>
-    <a href="/nama_category" class="bg- inline-block bg-teal-800 px-12 py-2 rounded-full text-lg border-gray-300 text-white font-bold hover:text-teal-950 transition duration-300 ">Jelajahi Destinasi</a>
-</div>
-</head>
 </html>
 >>>>>>> Stashed changes
