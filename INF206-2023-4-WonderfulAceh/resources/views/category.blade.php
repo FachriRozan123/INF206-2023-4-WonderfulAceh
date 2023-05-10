@@ -77,7 +77,6 @@
             box-sizing: border-box;
             font-size: 16px;
         }
-
         @media screen and (max-width: 768px) {
             footer {
                 font-size: 14px;
@@ -120,6 +119,7 @@
     <footer class="bg-white bg-opacity-50 text-center bottom-full">
       <p>Copyright 2023 &copy; WonderfulAceh</p>
     </footer>
+    
 </body>
 </html>
 @endsection
