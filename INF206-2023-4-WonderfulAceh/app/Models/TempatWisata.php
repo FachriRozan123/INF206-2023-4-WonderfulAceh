@@ -19,4 +19,13 @@ class TempatWisata extends Model
     {
         return $this->hasOne(Category::class);
     }
+    /**
+     * Get the user associated with the TempatWisata
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\HasOne
+     */
+    public function tourguide(): HasOne
+    {
+        return $this->hasOne(TourGuide::class);
+    }
 }

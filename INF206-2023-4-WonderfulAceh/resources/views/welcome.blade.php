@@ -1,3 +1,6 @@
+@extends('layouts.app')
+
+@section('content')
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -124,8 +127,5 @@
         </p>
         <a href="/nama_category" class="bg- inline-block bg-teal-800 px-12 py-2 rounded-full text-lg border-gray-300 text-white font-bold hover:text-teal-950 transition duration-300 ">Jelajahi Destinasi</a>
     </div>
-<<<<<<< Updated upstream
 </html>
-=======
-</html>
->>>>>>> Stashed changes
+@endsection
