@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>About Us</title>
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
@@ -18,6 +19,35 @@
             display: block;
         }
     </style>
+    <style>
+    html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .content {
+        min-height: 100%;
+        /* tambahkan padding-bottom untuk memberi ruang pada footer */
+        padding-bottom: 50px; /* ganti angka sesuai kebutuhan */
+    }
+
+    footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        /* tambahkan padding dan gaya lain sesuai kebutuhan */
+        padding: 0px;
+        background-color: #8BACAA;
+        text-align: center;
+    }
+
+    footer p {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+</style>
 
 </head>
 
@@ -377,15 +407,11 @@
         </section>
     </main>
 
-    <footer class="relative bg-teal-800 text-gray-700 px-4 border-t-8 sm:px-2  py-2 mt-auto">
-    <div class="block text-center md:flex-row">
-        <div class="w-full lg:mx-2 ">
-            <h3 class="font-bold text-medium text-white uppercase">Wonderful Aceh</h3>
-            <h5 class="tracking-wider font-medium text-xs text-gray-300">© 2023. All rights reserved.</h5>
-        </div>
-    </div>
-
-</footer>
+    <footer class="text-center pt- ">
+        <p> Copyright 2023 &copy; WonderfulAceh</p>
+    </footer>
+    <!-- Scripts -->
+    <script src="{{ asset('js/app.js') }}" defer></script>
 
 </body>
 
