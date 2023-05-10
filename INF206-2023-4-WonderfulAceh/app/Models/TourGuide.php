@@ -10,8 +10,8 @@ class TourGuide extends Model
     use HasFactory;
     protected $table = 'tour_guide';
     protected $fillable = ['nama', 'alamat', 'nomor_hp', 'nama_tempat_id', 'deskripsi', 'image'];
-    public function tempatwisata(): BelongsTo
+    public function tempatwisata()
     {
-        return $this->belongsTo(TempatWisata::class);
+        return $this->hasOne(TempatWisata::class);
     }
 }

@@ -90,30 +90,16 @@
 <body position="center">
     <div class="container mt-2">
     <div class="row">
-        <div class="col-md-3 col-sm-6">
+        @foreach ($category as $item)
+        <div class="col-md-3 mt-4">
             <div class="card card-block">
-                <h4 class="card-title text-center mt-3 mb-3"><i class="material-icons">Gunung</i></h4>
-                <img src="img/mountain.jpg" style="background-position: center; width: 290px; height: 195px;">
+              <a href="{{'/category/'.$item->slug }}">
+                <h4 class="card-title text-center mt-3 mb-3"><i class="material-icons">{{$item->category}}</i></h4>
+                <img src="{{asset($item->image)}}" style="background-position: center; width: 290px; height: 195px;">
+              </a>
             </div>
-        </div>
-        <div class="col-md-3 col-sm-6">
-            <div class="card card-block">
-                <h4 class="card-title text-center mt-3 mb-3"><i class="material-icons">Sungai</i></h4>
-                <img src="img/sungai.jpeg" style="background-position: center; width: 290px; height: 195px;">
-            </div>
-        </div>
-        <div class="col-md-3 col-sm-6">
-            <div class="card card-block">
-                <h4 class="card-title text-center mt-3 mb-3"><i class="material-icons">Hutan</i></h4>
-                <img src="img/hutan.jpeg" style="background-position: center; width: 290px; height: 195px;">
-            </div>
-        </div> 
-        <div class="col-md-3 col-sm-6">
-            <div class="card card-block">
-                <h4 class="card-title text-center mt-3 mb-3"><i class="material-icons">Pantai</i></h4>
-                <img src="img/pantai.jpg" style="background-position: center; width: 290px; height: 195px;">
-            </div>
-        </div> 
+          </div>
+        @endforeach
     </div>
     </div>
 

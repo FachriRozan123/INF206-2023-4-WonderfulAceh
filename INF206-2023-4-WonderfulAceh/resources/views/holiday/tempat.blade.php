@@ -13,25 +13,26 @@
     <script src="https://kit.fontawesome.com/348c676099.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    {{-- {{dd($tempat[0]->category->category);}}  --}}
     <main style=" background-color:#1f4847  !important;">
         <div style="text-align:left;">
             <h1 style="font-size:2rem;color:rgb(255, 255, 255); padding-left: 20px;">
-                Nama Tempat
+                {{$tempat[0]->nama_tempat}}
             </h1>
              <div class="row" style="justify-content: center;">
                 <div class="col" style="position: relative; left: 20px;">
-                  <a href=".html" class="text-decoration-none">
+                  <a  class="text-decoration-none">
                     <div
                       style="display: inline-block; height: 300px; width: 1420px; background-color: white; border-radius: 0%; overflow: hidden; padding: 6px;">
-                      <a href=".html" class="text-decoration-none">
-                          <img src="img/pantai.jpg" style="height: 270px; width: 25%; margin-top: 10px;">
+                      <a  class="text-decoration-none">
+                          <img src="{{asset($tempat[0]->image)}}" style="height: 270px; width: 25%; margin-top: 10px;">
                           </a>
                           <div style="position: absolute; top: 40px; left: 27%; text-align: center;">
-                            <h4>Nama:</h4>
+                            <h4>Nama:{{$tempat[0]->nama_tempat}}</h4>
                             <div style="position: absolute; top: 60px; text-align: center;">
-                            <h4>Kategori:</h4>
+                            <h4>Kategori:{{$tempat[0]->category->category}}</h4>
                             <div style="position: absolute; top: 60px; text-align: center;">
-                            <h4>Deskripsi:</h4>
+                            <h4>Deskripsi:{{$tempat[0]->deskripsi}}</h4>
                        </div>
                        </div>
                        </div>
@@ -43,24 +44,24 @@
             <div class="col" style="position: relative; left: 20px;">
                 <a href=".html" class="text-decoration-none">
                     <h1 style="font-size:2rem;color:rgb(255, 255, 255); padding-left: 2px;">
-                        Nama Tempat
+                        Pemilik Nama Tempat
                     </h1>
                     <div style="display: flex; height: 200px; width: 320px; background-color: rgb(255, 253, 253); border-radius: 0%; overflow: hidden; padding: 15px;">
-                    <img src="img/user.png" style="height: 110px; width: 40%;">
-                    <h3 style="color: black;">Nama</h3>
-                    <img src="img/chat.png" style="height: 60px; width: 30%; margin-top: 100px;">
+                    <img src="/img/user.png" style="height: 110px; width: 40%;">
+                    <h3 style="color: black;">{{$tempat[0]->nama_pemilik}}</h3>
+                    <img src="/img/chat.png" style="height: 60px; width: 30%; margin-top: 100px;">
                 </div>
                 </a>
             </div>
             <div class="col" style="position: relative; margin-left: 750px; ">
-                <a href=".html" class="text-decoration-none">
+                <a  class="text-decoration-none">
                     <h1 style="font-size:2rem;color:rgb(255, 255, 255); padding-left: 2px;">
                         Tour Guide
                     </h1>
                     <div style="display: flex; height: 200px; width: 320px; background-color: rgb(255, 253, 253); border-radius: 0%; overflow: hidden; padding: 15px;">
-                        <img src="img/user.png" style="height: 110px; width: 40%;">
+                        <img src="/img/user.png" style="height: 110px; width: 40%;">
                         <h3 style="color: black;">Nama</h3>
-                        <img src="img/chat.png" style="height: 60px; width: 30%; margin-top: 100px;">
+                        <img src="/img/chat.png" style="height: 60px; width: 30%; margin-top: 100px;">
                     </div>
                 </a>
             </div>

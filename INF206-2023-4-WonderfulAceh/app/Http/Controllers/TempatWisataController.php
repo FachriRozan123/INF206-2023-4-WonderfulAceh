@@ -16,6 +16,21 @@ class TempatWisataController extends Controller
             return view('holiday.index')
             ->with('tempat_wisata',$tempat_wisata);
     }
+    public function place($slug)
+    {
+        $tempat = TempatWisata::where('slug','LIKE',$slug)->get();
+        return view('holiday.tempat',['tempat'=>$tempat]);
+    }
+
+    public function searchByName(Request $request)
+    {
+        $query = $request->input('query');
+        
+        $tempat_wisata = TempatWisata::where('nama_tempat', 'LIKE', "%$query%")->get();
+        
+        return view('holiday.search', compact('tempat_wisata'));
+    }
+    
     public function create()
     {
         $category = DB::table('category')->get();
@@ -41,6 +56,7 @@ if ($category) {
             $request->image->move('storage/img', $link);
        }
         TempatWisata::create([
+            'slug'=>strtolower(str_replace(' ', '_', $request->nama_tempat)),
             'nama_tempat'=>$request['nama_tempat'],
             'alamat'=>$request['alamat'],
             'nama_pemilik'=>$request['nama_pemilik'],
