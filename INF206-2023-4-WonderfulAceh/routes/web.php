@@ -1,7 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\TempatWisataController ;
+use App\Http\Controllers\TempatWisataController;
+use App\Http\Controllers\TourGuideController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -24,7 +25,7 @@ Route::middleware([
 ])->group(function () {
     Route::get('/dashboard', function () {
         return view('dashboard');
-    })->name('dashboard');
+    })->name('dashboard'); 
 });
 Route::get('/category', function () {
     return view('category');
@@ -46,12 +47,16 @@ Route::get('/thisorthat', function () {
 Route::get('/nama_category', function () {
     return view('nama_category');
 });
+Route::get('/tempat', function () {
+    return view('tempat');
+});
 // Route::get('/login', function () {
 //     return view('login');
 // });
 // Route::get('/register', function () {
 //     return view('register');
 // });
+<<<<<<< HEAD
 Route::get('/rekomendasi', function () {
     return view('rekomendasi');
 });
@@ -63,3 +68,12 @@ Route::get('/chattourguide', function () {
 Route::get('/chatpemiliktempat', function () {
     return view('chatpemiliktempat');
 });
+Route::resource('tour_guide',TourGuideController::class);
+=======
+Route::get('/frame50', function () {
+    return view('frame50');
+});
+Route::get('/AboutUs', function () {
+    return view('AboutUs');
+});
+>>>>>>> 2108107010025

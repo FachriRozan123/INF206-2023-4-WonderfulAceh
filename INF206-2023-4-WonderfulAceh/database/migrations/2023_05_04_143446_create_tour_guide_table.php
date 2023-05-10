@@ -11,22 +11,21 @@ return new class extends Migration
      */
     public function up()
 {
-    Schema::create('tempat_wisata', function (Blueprint $table) {
+    Schema::create('tour_guide', function (Blueprint $table) {
         $table->bigIncrements('id')->comment('The Primary Key for the table.');
-        $table->string('nama_tempat');
+        $table->string('nama');
         $table->string('alamat');
-        $table->string('nama_pemilik');
-        $table->string('nomor_pemilik');
-        $table->foreignId('category_id');
+        $table->string('nomor_hp');
+        $table->string('nama_tempat');
         $table->text('deskripsi');
-        $table->string('image');
+        $table->string('image')->nullable();
         $table->timestamps();
     });
     
 }
 public function down()
 {
-    Schema::dropIfExists('tempat_wisata');
+    Schema::dropIfExists('tour_guide');
 }
 
 
