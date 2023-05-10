@@ -35,12 +35,12 @@ class CategorySeeder extends Seeder
         DB::table('category')->insert([
             'category' => 'Tempat Bersejarah',
             'slug' => 'tempat_bersejarah',
-            'image' => 'img/tempatsejarah.jpeg',
+            'image' => 'img/tempatsejarah.jpg',
         ]);
         DB::table('category')->insert([
             'category' => 'Museum',
             'slug' => 'museum',
-            'image' => 'img/museumaceh.jpeg',
+            'image' => 'img/museumaceh.jpg',
         ]);
         DB::table('category')->insert([
             'category' => 'Pameran',

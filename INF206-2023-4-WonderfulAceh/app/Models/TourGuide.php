@@ -9,5 +9,9 @@ class TourGuide extends Model
 {
     use HasFactory;
     protected $table = 'tour_guide';
-    protected $fillable = ['nama', 'alamat', 'nomor_hp', 'nama_tempat', 'deskripsi', 'image'];
+    protected $fillable = ['nama', 'alamat', 'nomor_hp', 'nama_tempat_id', 'deskripsi', 'image'];
+    public function tempatwisata()
+    {
+        return $this->hasOne(TempatWisata::class);
+    }
 }

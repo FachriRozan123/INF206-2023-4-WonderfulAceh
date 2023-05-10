@@ -9,14 +9,23 @@ class TempatWisata extends Model
 {
     use HasFactory;
     protected $table = 'tempat_wisata';
-    protected $fillable = ['nama_tempat', 'alamat', 'nama_pemilik','category_id' ,'nomor_pemilik', 'deskripsi', 'image'];
+    protected $fillable = ['slug','nama_tempat', 'alamat', 'nama_pemilik','category_id' ,'nomor_pemilik', 'deskripsi', 'image'];
     /**
      * Get the user associated with the TempatWisata
      *
      * @return \Illuminate\Database\Eloquent\Relations\HasOne
      */
-    public function category(): HasOne
+    public function category()
     {
-        return $this->hasOne(Category::class);
+        return $this->belongsTo(Category::class);
+    }
+    /**
+     * Get the user associated with the TempatWisata
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\HasOne
+     */
+    public function tourguide()
+    {
+        return $this->belongsTo(TourGuide::class);
     }
 }

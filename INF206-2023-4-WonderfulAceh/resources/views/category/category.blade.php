@@ -7,6 +7,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
@@ -66,24 +67,6 @@
         .card:hover::before, .card:hover::after, .card:focus::before, .card:focus::after {
             transform: scale3d(1, 1, 1);
         }
-<<<<<<< HEAD
-    
-    </style>
-<style>
-    html, body {
-        height: 100%;
-        margin: 0;
-        padding: 0;
-    }
-
-    .content {
-            min-height: calc(100vh - 50px); /* Menyesuaikan tinggi konten dengan navbar dan footer */
-            /* tambahkan padding-bottom untuk memberi ruang pada footer */
-            padding-bottom: 50px; /* ganti angka sesuai kebutuhan */
-            display: flex; /* Menjadikan konten sebagai flex container */
-            flex-direction: column; /* Mengatur tata letak konten secara vertikal */
-            align-items: center; /* Mengatur konten agar berada di tengah-tengah secara horizontal */
-=======
         footer {
             position: absolute;
             bottom: 0;
@@ -94,73 +77,35 @@
             box-sizing: border-box;
             font-size: 16px;
         }
+
         @media screen and (max-width: 768px) {
             footer {
                 font-size: 14px;
                 padding: 10px;
             }
->>>>>>> main
         }
-    footer {
-        position: fixed;
-        left: 0;
-        bottom: 0;
-        width: 100%;
-        /* tambahkan padding dan gaya lain sesuai kebutuhan */
-        padding: 0px;
-        background-color: #8BACAA;
-        text-align: center;
-    }
-
-    footer p {
-        margin-top: 0;
-        margin-bottom: 0;
-    }
-</style>
-
+    </style>
 </head>
 
-<body>
-    
+<body position="center">
     <div class="container mt-2">
     <div class="row">
-<div class="container">
-    <div class="row">
-        <div class="col-md-3 col-sm-6 mx-auto">
-            <div class="card card-block" style="overflow: hidden;">
-                <h4 class="card-title text-center mt-3 mb-3"><i class="material-icons">Gunung</i></h4>
-                <img src="img/mountain.jpg" style="display: block; width: 100%; height: 250px;">
+        @foreach ($category as $item)
+        <div class="col-md-3 mt-4">
+            <div class="card card-block">
+              <a href="{{'/category/'.$item->slug }}">
+                <h4 class="card-title text-center mt-3 mb-3"><i class="material-icons">{{$item->category}}</i></h4>
+                <img src="{{asset($item->image)}}" style="background-position: center; width: 290px; height: 195px;">
+              </a>
             </div>
-        </div>
-
-        <div class="col-md-3 col-sm-6 mx-auto">
-            <div class="card card-block" style="overflow: hidden;">
-                <h4 class="card-title text-center mt-3 mb-3"><i class="material-icons">Sungai</i></h4>
-                <img src="img/sungai.jpg" style="display: block; width: 100%; height: 250px;">
-            </div>
-        </div>
-
-        <div class="col-md-3 col-sm-6 mx-auto">
-            <div class="card card-block" style="overflow: hidden;">
-                <h4 class="card-title text-center mt-3 mb-3"><i class="material-icons">Hutan</i></h4>
-                <img src="img/hutan.jpg" style="display: block; width: 100%; height: 250px;">
-            </div>
-        </div>
-
-        <div class="col-md-3 col-sm-6 mx-auto">
-            <div class="card card-block" style="overflow: hidden;">
-                <h4 class="card-title text-center mt-3 mb-3"><i class="material-icons">Pantai</i></h4>
-                <img src="img/pantai.jpg" style="display: block; width: 100%; height: 250px;">
-            </div>
-        </div>
+          </div>
+        @endforeach
     </div>
-</div>
+    </div>
 
-
-    <footer class="text-center pt- ">
-        <p> Copyright 2023 &copy; WonderfulAceh</p>
+    <footer class="bg-white bg-opacity-50 text-center bottom-full">
+      <p>Copyright 2023 &copy; WonderfulAceh</p>
     </footer>
-    
 </body>
 </html>
 @endsection
