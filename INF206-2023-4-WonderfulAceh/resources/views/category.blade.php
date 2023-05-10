@@ -66,6 +66,7 @@
         .card:hover::before, .card:hover::after, .card:focus::before, .card:focus::after {
             transform: scale3d(1, 1, 1);
         }
+<<<<<<< HEAD
     
     </style>
 <style>
@@ -82,6 +83,23 @@
             display: flex; /* Menjadikan konten sebagai flex container */
             flex-direction: column; /* Mengatur tata letak konten secara vertikal */
             align-items: center; /* Mengatur konten agar berada di tengah-tengah secara horizontal */
+=======
+        footer {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.5);
+            padding: auto;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+        @media screen and (max-width: 768px) {
+            footer {
+                font-size: 14px;
+                padding: 10px;
+            }
+>>>>>>> main
         }
     footer {
         position: fixed;
@@ -142,6 +160,7 @@
     <footer class="text-center pt- ">
         <p> Copyright 2023 &copy; WonderfulAceh</p>
     </footer>
+    
 </body>
 </html>
 @endsection
