@@ -68,10 +68,3 @@ Route::get('/chatpemiliktempat', function () {
     return view('chatpemiliktempat');
 });
 Route::resource('tour_guide',TourGuideController::class);
-<<<<<<< Updated upstream
-=======
-
-Route::get('/AboutUs', function () {
-    return view('AboutUs');
-});
->>>>>>> Stashed changes
