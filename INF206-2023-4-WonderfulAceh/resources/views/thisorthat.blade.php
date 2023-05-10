@@ -13,7 +13,7 @@
     <script src="https://kit.fontawesome.com/348c676099.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <main style=" background-color:#234741  !important;">
+    <main style=" background-color:#1f4847  !important;">
         <br>
         <br>
         <br>
@@ -60,11 +60,14 @@
         </div>
         <br>
         <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
     </main>
-    
-    <footer class="bg-white text-center">
-        <p> Copyright 2023 &copy; WonderfulAceh</p>
-    </footer>
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
