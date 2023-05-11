@@ -1,9 +1,13 @@
+@extends('layouts.app')
+
+@section('content')
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://www.toursabang.co.id/wp-content/uploads/2022/03/pantai.gif">
     <title>Document</title>
     @vite(['resources/css/app.css', 'resources/js/app.js'])
@@ -38,6 +42,9 @@
                             href="/AboutUs">About Us</a></li>
                     <li class="md:ml-4"><a
                             class="text-xl py-2 inline-block text-white font-medium hover:bg-sky-100 lg:hover:bg-transparent lg:border-0 hover:w-full px-2 hover:text-teal-950"href="/login">Login</a>
+                    </li>
+                    <li class="md:ml-4"><a
+                            class="text-xl py-2 inline-block text-white font-medium hover:bg-sky-100 lg:hover:bg-transparent lg:border-0 hover:w-full px-2 hover:text-teal-950"href="{{ route('register') }}">Register</a>
                     </li>
                 </ul>
             </nav>
@@ -124,8 +131,5 @@
         </p>
         <a href="/nama_category" class="bg- inline-block bg-teal-800 px-12 py-2 rounded-full text-lg border-gray-300 text-white font-bold hover:text-teal-950 transition duration-300 ">Jelajahi Destinasi</a>
     </div>
-<<<<<<< Updated upstream
 </html>
-=======
-</html>
->>>>>>> Stashed changes
+@endsection
