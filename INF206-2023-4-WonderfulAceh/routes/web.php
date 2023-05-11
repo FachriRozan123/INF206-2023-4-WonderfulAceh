@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\TempatWisataController;
 use App\Http\Controllers\TourGuideController;
+use App\Http\Controllers\CategoryController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -15,7 +16,7 @@ use App\Http\Controllers\TourGuideController;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('welcome'); 
 });
 
 Route::middleware([
@@ -27,12 +28,12 @@ Route::middleware([
         return view('dashboard');
     })->name('dashboard'); 
 });
-Route::get('/category', function () {
-    return view('category');
-});
-Route::get('/search', function () {
-    return view('search');
-});
+Route::get('/category',[CategoryController::class,'index']);
+Route::get('/category/{slug}',[CategoryController::class, 'place']);
+// web.php
+
+Route::get('/search', [TempatWisataController::class, 'searchByName']);
+
 Route::get('/addTempat', function () {
     return view('addTempat');
 });
@@ -50,6 +51,7 @@ Route::get('/nama_category', function () {
 Route::get('/tempat', function () {
     return view('tempat');
 });
+Route::get('/tempat/{slug}',[TempatWisataController::class, 'place']);
 // Route::get('/login', function () {
 //     return view('login');
 // });
@@ -60,6 +62,10 @@ Route::get('/rekomendasi', function () {
     return view('rekomendasi');
 });
 
+Route::get('/rekomendasi2', function () {
+    return view('rekomendasi2');
+});
+
 Route::get('/chattourguide', function () {
     return view('chattourguide');
 });
@@ -67,4 +73,13 @@ Route::get('/chattourguide', function () {
 Route::get('/chatpemiliktempat', function () {
     return view('chatpemiliktempat');
 });
+
+Route::get('/AboutUs', function () {
+    return view('AboutUs');
+});
+
 Route::resource('tour_guide',TourGuideController::class);
+
+Route::get('/chatpemiliktempat', function () {
+    return view('chatpemiliktempat');
+});
