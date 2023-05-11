@@ -16,7 +16,7 @@ use App\Http\Controllers\CategoryController;
 */
 
 Route::get('/', function () {
-    return view('welcome'); 
+    return view('welcome');
 });
 
 Route::middleware([
@@ -28,12 +28,27 @@ Route::middleware([
         return view('dashboard');
     })->name('dashboard'); 
 });
+<<<<<<< Updated upstream
 Route::get('/category',[CategoryController::class,'index']);
 Route::get('/category/{slug}',[CategoryController::class, 'place']);
 // web.php
 
 Route::get('/search', [TempatWisataController::class, 'searchByName']);
 
+=======
+Route::get('/category', function () {
+    return view('category');
+});
+Route::get('/nama_category', function () {
+    return view('nama_category');
+});
+Route::get('/AboutUs', function () {
+    return view('AboutUs');
+});
+Route::get('/search', function () {
+    return view('search');
+});
+>>>>>>> Stashed changes
 Route::get('/addTempat', function () {
     return view('addTempat');
 });
@@ -69,9 +84,4 @@ Route::get('/chattourguide', function () {
 Route::get('/chatpemiliktempat', function () {
     return view('chatpemiliktempat');
 });
-
-Route::get('/AboutUs', function () {
-    return view('AboutUs');
-});
-
 Route::resource('tour_guide',TourGuideController::class);
