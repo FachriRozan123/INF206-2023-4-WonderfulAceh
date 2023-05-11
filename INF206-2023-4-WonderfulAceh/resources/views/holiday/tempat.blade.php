@@ -23,15 +23,9 @@
                 <div class="col" style="position: relative; left: 20px;">
                   <a  class="text-decoration-none">
                     <div
-<<<<<<< HEAD:INF206-2023-4-WonderfulAceh/resources/views/holiday/tempat.blade.php
                       style="display: inline-block; height: 300px; width: 1420px; background-color: white; border-radius: 0%; overflow: hidden; padding: 6px;">
                       <a  class="text-decoration-none">
                           <img src="{{asset($tempat[0]->image)}}" style="height: 270px; width: 25%; margin-top: 10px;">
-=======
-                      style="display: inline-block; height: 300px; width: 1250px; background-color: white; border-radius: 0%; overflow: hidden; padding: 6px;">
-                      <a href=".html" class="text-decoration-none">
-                          <img src="img/pantai.jpg" style="height: 270px; width: 25%; margin-top: 10px;">
->>>>>>> 2108107010065:INF206-2023-4-WonderfulAceh/resources/views/tempat.blade.php
                           </a>
                           <div style="position: absolute; top: 40px; left: 27%; text-align: center;">
                             <h4>Nama:{{$tempat[0]->nama_tempat}}</h4>
@@ -46,7 +40,6 @@
                     </div>
                 </div>
              </div>
-<<<<<<< HEAD:INF206-2023-4-WonderfulAceh/resources/views/holiday/tempat.blade.php
         <div class="row" style="display: flex; justify-content: space-between;">
             <div class="col" style="position: relative; left: 20px;">
                 <a href=".html" class="text-decoration-none">
@@ -71,30 +64,6 @@
                         <img src="/img/chat.png" style="height: 60px; width: 30%; margin-top: 100px;">
                     </div>
                 </a>
-=======
-             <div class="row" style="display: flex; justify-content: space-between;">
-    <div class="col-6" style="position: relative; left: 20px;">
-        <a href=".html" class="text-decoration-none">
-            <h1 style="font-size:2rem;color:rgb(255, 255, 255); padding-left: 2px;">
-                Nama Tempat
-            </h1>
-            <div style="display: flex; height: 200px; width: 320px; background-color: rgb(255, 253, 253); border-radius: 0%; overflow: hidden; padding: 15px;">
-                <img src="img/user.png" style="height: 110px; width: 40%;">
-                <h3 style="color: black;">Nama</h3>
-                <img src="img/chat.png" style="height: 60px; width: 30%; margin-top: 100px;">
-            </div>
-        </a>
-    </div>
-    <div class="col-md-3" style="margin-right: 42px;">
-        <a href=".html" class="text-decoration-none">
-            <h1 style="font-size:2rem;color:rgb(255, 255, 255); padding-left: 2px;">
-                Tour Guide
-            </h1>
-            <div style="display: flex; height: 200px; width: 320px; background-color: rgb(255, 253, 253); border-radius: 0%; overflow: hidden; padding: 15px;">
-                <img src="img/user.png" style="height: 110px; width: 40%;">
-                <h3 style="color: black;">Nama</h3>
-                <img src="img/chat.png" style="height: 60px; width: 30%; margin-top: 100px;">
->>>>>>> 2108107010065:INF206-2023-4-WonderfulAceh/resources/views/tempat.blade.php
             </div>
         </a>
     </div>
