@@ -67,6 +67,7 @@
         .card:hover::before, .card:hover::after, .card:focus::before, .card:focus::after {
             transform: scale3d(1, 1, 1);
         }
+<<<<<<< HEAD:INF206-2023-4-WonderfulAceh/resources/views/category/category.blade.php
 <<<<<<< Updated upstream:INF206-2023-4-WonderfulAceh/resources/views/category/category.blade.php
         footer {
             position: absolute;
@@ -85,6 +86,8 @@
                 padding: 10px;
             }
 =======
+=======
+>>>>>>> 2108107010065:INF206-2023-4-WonderfulAceh/resources/views/category.blade.php
     
     </style>
 <style>
@@ -92,6 +95,33 @@
         height: 100%;
         margin: 0;
         padding: 0;
+<<<<<<< HEAD:INF206-2023-4-WonderfulAceh/resources/views/category/category.blade.php
+=======
+    }
+
+    .content {
+            min-height: calc(100vh - 50px); /* Menyesuaikan tinggi konten dengan navbar dan footer */
+            /* tambahkan padding-bottom untuk memberi ruang pada footer */
+            padding-bottom: 50px; /* ganti angka sesuai kebutuhan */
+            display: flex; /* Menjadikan konten sebagai flex container */
+            flex-direction: column; /* Mengatur tata letak konten secara vertikal */
+            align-items: center; /* Mengatur konten agar berada di tengah-tengah secara horizontal */
+        }
+    footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        /* tambahkan padding dan gaya lain sesuai kebutuhan */
+        padding: 0px;
+        background-color: #8BACAA;
+        text-align: center;
+    }
+
+    footer p {
+        margin-top: 0;
+        margin-bottom: 0;
+>>>>>>> 2108107010065:INF206-2023-4-WonderfulAceh/resources/views/category.blade.php
     }
 
     .content {
@@ -138,10 +168,19 @@
             </div>
         </div>
 
+<<<<<<< HEAD:INF206-2023-4-WonderfulAceh/resources/views/category/category.blade.php
     <div class="col-md-3 col-sm-6 mx-auto">
         <div class="card card-block" style="overflow: hidden;" onclick="location.href='nama_category'">
             <h4 class="card-title text-center mt-3 mb-3"><i class="material-icons">Pantai</i></h4>
             <img src="img/pantai.jpg" style="display: block; width: 100%; height: 250px;">
+=======
+        <div class="col-md-3 col-sm-6 mx-auto">
+            <div class="card card-block" style="overflow: hidden;">
+                <h4 class="card-title text-center mt-3 mb-3"><i class="material-icons">Pantai</i></h4>
+                <a href="{{ route('rekomendasi') }}">
+                <img src="img/pantai.jpg" style="display: block; width: 100%; height: 250px;">
+            </div>
+>>>>>>> 2108107010065:INF206-2023-4-WonderfulAceh/resources/views/category.blade.php
         </div>
 >>>>>>> Stashed changes:INF206-2023-4-WonderfulAceh/resources/views/category.blade.php
     </div>
