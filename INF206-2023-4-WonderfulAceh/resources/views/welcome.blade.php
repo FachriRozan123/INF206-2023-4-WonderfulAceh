@@ -40,6 +40,9 @@
                     <li class="md:ml-4"><a
                             class="text-xl py-2 inline-block text-white font-medium hover:bg-sky-100 lg:hover:bg-transparent lg:border-0 hover:w-full px-2 hover:text-teal-950"href="/login">Login</a>
                     </li>
+                    <li class="md:ml-4"><a
+                            class="text-xl py-2 inline-block text-white font-medium hover:bg-sky-100 lg:hover:bg-transparent lg:border-0 hover:w-full px-2 hover:text-teal-950"href="{{ route('register') }}">Register</a>
+                    </li>
                 </ul>
             </nav>
         </div>

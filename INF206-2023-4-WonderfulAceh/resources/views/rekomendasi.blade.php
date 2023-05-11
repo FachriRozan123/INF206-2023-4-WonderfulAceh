@@ -69,7 +69,7 @@
           <div class="col">
             <div class="card-body">
               <h5 class="card-title">Nama :</h5>
-              <h5 class="card-title">Kategori :</h5>
+              <h5 class="card-title">Kategori : Pantai</h5>
               <h5 class="card-title">0.0/0.5 :</h5>
             </div>
           </div>

@@ -200,11 +200,18 @@
             <li class="nav-item">
                 <a class="nav-link" href="/thisorthat">This or That</a>
             </li>
-            <form class="form-inline mt-2 mt-md-0">
+            <!-- <form action="{{ route('rekomendasi.search') }}" method="GET" class="search-form">
+   
+    <input type="text" name="keyword" placeholder="Search" class="form-control">
+    <button class="btn btn-outline-success text-white my-2 my-sm-0" type="submit">Search</button>
+</form> -->
+<form class="form-inline mt-2 mt-md-0" action="{{ route('rekomendasi.search') }}" method="GET">
               <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
               <form action="/search">
-                  <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+              @csrf
+                  <button class="btn btn-outline-success text-white my-2 my-sm-0" type="submit">Search</button>
               </form>
+
 
           </form>
                 <!-- Authentication Links -->

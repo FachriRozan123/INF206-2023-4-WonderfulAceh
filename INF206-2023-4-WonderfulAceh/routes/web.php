@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\TempatWisataController;
 use App\Http\Controllers\TourGuideController;
+use App\Http\Controllers\RekomendasiController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,18 +15,22 @@ use App\Http\Controllers\TourGuideController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome'); 
-});
-
 Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),
     'verified'
 ])->group(function () {
-    Route::get('/dashboard', function () {
-        return view('dashboard');
-    })->name('dashboard'); 
+    Route::get('/', function () {
+        return redirect('/welcome');
+    });
+    
+    Route::get('/welcome', function () {
+        return view('welcome');
+    });
+    Route::get('/rekomendasi', [RekomendasiController::class, 'index'])->name('rekomendasi.index');
+
+    // Rute untuk hasil pencarian
+    Route::get('/hasil-pencarian/{keyword}', [HasilPencarianController::class, 'index'])->name('hasil_pencarian');
 });
 Route::get('/category', function () {
     return view('category');
@@ -73,3 +78,6 @@ Route::get('/AboutUs', function () {
 });
 
 Route::resource('tour_guide',TourGuideController::class);
+
+Route::get('/rekomendasi', [RekomendasiController::class, 'index'])->name('rekomendasi');
+Route::post('/search', [RekomendasiController::class, 'search'])->name('rekomendasi.search');
