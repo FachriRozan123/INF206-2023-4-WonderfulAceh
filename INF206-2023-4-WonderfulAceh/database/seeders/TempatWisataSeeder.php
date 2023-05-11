@@ -22,6 +22,7 @@ class TempatWisataSeeder extends Seeder
             'category_id' => '1',
             'deskripsi' => 'Pulau terluar Indonesia yang terletak di ujung barat Sumatera dengan keindahan bawah laut yang memukau.',
             'image' => 'storage/img/pulauweh.jpg',
+            'user_id' => '1',
             'created_at' => date('Y-m-d H:i:s'),
             'updated_at' => date('Y-m-d H:i:s'),
         ]);
@@ -35,6 +36,7 @@ class TempatWisataSeeder extends Seeder
             'category_id' => '2',
             'deskripsi' => 'Masjid yang menjadi simbol dari Kota Banda Aceh, dibangun pada abad ke-17 dan masih berdiri kokoh hingga saat ini.',
             'image' => 'storage/img/masjid.jpg',
+            'user_id' => '2',
             'created_at' => date('Y-m-d H:i:s'),
             'updated_at' => date('Y-m-d H:i:s'),
         ]);
@@ -48,6 +50,7 @@ class TempatWisataSeeder extends Seeder
             'category_id' => '3',
             'deskripsi' => 'Pantai yang terletak di sebelah barat Kota Banda Aceh dengan panorama yang menawan.',
             'image' => 'storage/img/uleelheue.jpg',
+            'user_id' => '3',
             'created_at' => date('Y-m-d H:i:s'),
             'updated_at' => date('Y-m-d H:i:s'),
         ]);
@@ -61,6 +64,7 @@ class TempatWisataSeeder extends Seeder
             'category_id' => '3',
             'deskripsi' => 'Pantai yang terletak di sebelah barat Kota Banda Aceh dengan pasir putih yang lembut dan ombak yang cocok untuk berselancar.',
             'image' => 'storage/img/lhoknga.jpg',
+            'user_id' => '4',
             'created_at' => date('Y-m-d H:i:s'),
             'updated_at' => date('Y-m-d H:i:s'),
         ]);

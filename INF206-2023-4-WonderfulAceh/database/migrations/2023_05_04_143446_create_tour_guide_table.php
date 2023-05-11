@@ -19,6 +19,7 @@ return new class extends Migration
         $table->foreignId('nama_tempat_id');
         $table->text('deskripsi');
         $table->string('image');
+        $table->foreignId('user_id');
         $table->timestamps();
     });
     

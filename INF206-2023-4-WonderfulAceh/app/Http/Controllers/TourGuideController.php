@@ -32,7 +32,7 @@ if ($tempat_wisata) {
     $tempat_wisata_id = $tempat_wisata->id;
 }        
         if($request->file('image')){
-            $link = 'img/'.time().'-'.$request->image->getClientOriginalName();
+            $link = 'storage/img/'.time().'-'.$request->image->getClientOriginalName();
             $request->image->move('storage/img', $link);
        }
         TourGuide::create([
@@ -42,7 +42,8 @@ if ($tempat_wisata) {
             'nomor_hp'=>$request['nomor_hp'],
             'nama_tempat_id'=>$tempat_wisata_id,
             'deskripsi'=>$request['deskripsi'],
-            'image'=>$link
+            'image'=>$link,
+            'user_id' => auth()->id()
         ]);
         return redirect('/');
     }
