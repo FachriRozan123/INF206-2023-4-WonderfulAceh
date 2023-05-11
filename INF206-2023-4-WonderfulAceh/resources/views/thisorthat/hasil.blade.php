@@ -6,7 +6,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Hasil Pencarian</title>
+    <title>Tempat</title>
     <!-- Bootstrap CDN Links -->
 
     <link
@@ -29,10 +29,9 @@
   <body>
   <main class="w-screen h-screen p-5" style="background-color: #234741">
     <p class="text-white ml-[100pt] text-xl font-bold font-serif p-2">
-      Hasil kata pencarian '{{ request()->input('query') }}'
+        Rekomendasi untuk Anda adalah
     </p>
-    @if (count($tempat_wisata)>0)
-    @foreach ($tempat_wisata as $item)
+    @foreach ($tempat1 as $item)
     <a href="{{'/tempat/'.$item->slug}}">
     <div class="card mb-3" style="max-width: 100%">
       <div class="row">
@@ -53,7 +52,48 @@
       </div>
     </a>
       @endforeach
-      @endif
+      @foreach ($tempat2 as $item)
+      <a href="{{'/tempat/'.$item->slug}}">
+      <div class="card mb-3" style="max-width: 100%">
+        <div class="row">
+          <div class="col-auto">
+            <img
+              src="{{asset($item->image)}}"
+              class="img-fluid rounded-start"
+              alt="Foto error"
+              style="background-position: center; width: 280px; height: 180px;"
+            />
+          </div>
+          <div class="col">
+            <div class="card-body">
+              <h5 class="card-title">Nama : {{$item->nama_tempat}}</h5>
+              <h5 class="card-title">Kategori : {{$item->category->category}}</h5>
+            </div>
+          </div>
+        </div>
+      </a>
+        @endforeach
+        @foreach ($tempat3 as $item)
+        <a href="{{'/tempat/'.$item->slug}}">
+        <div class="card mb-3" style="max-width: 100%">
+          <div class="row">
+            <div class="col-auto">
+              <img
+                src="{{asset($item->image)}}"
+                class="img-fluid rounded-start"
+                alt="Foto error"
+                style="background-position: center; width: 280px; height: 180px;"
+              />
+            </div>
+            <div class="col">
+              <div class="card-body">
+                <h5 class="card-title">Nama : {{$item->nama_tempat}}</h5>
+                <h5 class="card-title">Kategori : {{$item->category->category}}</h5>
+              </div>
+            </div>
+          </div>
+        </a>
+          @endforeach
     </div>
     </div>
   </main>

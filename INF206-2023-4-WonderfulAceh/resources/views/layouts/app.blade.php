@@ -180,9 +180,7 @@
       </a>
     </li>
   </ul>
-</div>
-
-              
+</div>      
             </li>
           </ul>
           <ul class="navbar-nav ml-auto">
@@ -194,8 +192,8 @@
                   Daftar
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="/addTempat">Tempat Wisata</a>
-                  <a class="dropdown-item" href="/addTourGuide">Tour Guide</a>
+                  <a class="dropdown-item" href="{{ route('holiday.create') }}">Tempat Wisata</a>
+                  <a class="dropdown-item" href="{{ route('tour_guide.create') }}">Tour Guide</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="/thisorthat">This or That</a>

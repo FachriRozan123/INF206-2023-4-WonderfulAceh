@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\TempatWisataController;
 use App\Http\Controllers\TourGuideController;
 use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\RekomendasiController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -16,7 +17,7 @@ use App\Http\Controllers\CategoryController;
 */
 
 Route::get('/', function () {
-    return view('welcome'); 
+    return view('welcome');
 });
 
 Route::middleware([
@@ -24,27 +25,37 @@ Route::middleware([
     config('jetstream.auth_session'),
     'verified'
 ])->group(function () {
-    Route::get('/dashboard', function () {
-        return view('dashboard');
-    })->name('dashboard'); 
+    Route::get('/', function () {
+        return redirect('/welcome');
+    });
+    Route::get('/welcome', function () {
+        return view('welcome');
+    });
+    Route::get('/rekomendasi', [RekomendasiController::class, 'index'])->name('rekomendasi.index');
+
+    // Rute untuk hasil pencarian
+    Route::get('/hasil-pencarian/{keyword}', [HasilPencarianController::class, 'index'])->name('hasil_pencarian');
 });
 Route::get('/category',[CategoryController::class,'index']);
 Route::get('/category/{slug}',[CategoryController::class, 'place']);
 // web.php
 
 Route::get('/search', [TempatWisataController::class, 'searchByName']);
-
+Route::get('/thisorthat', [TempatWisataController::class, 'thisorthat']);
+Route::post('/store-answer', [TempatWisataController::class, 'storeAnswer'])->name('storeAnswer');
 Route::get('/addTempat', function () {
     return view('addTempat');
 });
+Route::middleware(['auth'])->group(function () {
 Route::resource('holiday',TempatWisataController::class);
-
+Route::resource('tour_guide',TourGuideController::class);
+});
 Route::get('/addTourGuide', function () {
     return view('addTourGuide');
 });
-Route::get('/thisorthat', function () {
-    return view('thisorthat');
-});
+// Route::get('/thisorthat', function () {
+//     return view('thisorthat');
+// });
 Route::get('/nama_category', function () {
     return view('nama_category');
 });
@@ -75,3 +86,5 @@ Route::get('/AboutUs', function () {
 });
 
 Route::resource('tour_guide',TourGuideController::class);
+
+Route::get('/rekomendasi', [RekomendasiController::class, 'index'])->name('rekomendasi');

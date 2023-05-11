@@ -20,7 +20,8 @@ return new class extends Migration
         $table->string('nomor_pemilik');
         $table->foreignId('category_id');
         $table->text('deskripsi');
-        $table->string('image')->nullable();
+        $table->string('image');
+        $table->foreignId('user_id');
         $table->timestamps();
     });
     
