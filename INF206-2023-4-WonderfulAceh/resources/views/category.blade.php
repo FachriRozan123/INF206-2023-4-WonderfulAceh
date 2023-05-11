@@ -108,7 +108,7 @@
             </div>
         </div> 
         <div class="col-md-3 col-sm-6">
-            <div class="card card-block">
+            <div class="card card-block" style="overflow: hidden;" onclick="location.href='nama_category'">
                 <h4 class="card-title text-center mt-3 mb-3"><i class="material-icons">Pantai</i></h4>
                 <img src="img/pantai.jpg" style="background-position: center; width: 290px; height: 195px;">
             </div>
