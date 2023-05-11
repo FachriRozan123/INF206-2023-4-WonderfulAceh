@@ -47,12 +47,8 @@ $category_id = null;
 if ($category) {
     $category_id = $category->id;
 }        
-        // $array = Category::find('category',$request->category);
-        // dd($category);
-
-        // $request['category'] =$array->id;
        if($request->file('image')){
-            $link = 'img/'.time().'-'.$request->image->getClientOriginalName();
+            $link = 'storage/img/'.time().'-'.$request->image->getClientOriginalName();
             $request->image->move('storage/img', $link);
        }
         TempatWisata::create([
@@ -63,7 +59,8 @@ if ($category) {
             'nomor_pemilik'=>$request['nomor_pemilik'],
             'category_id'=>$category_id,
             'deskripsi'=>$request['deskripsi'],
-            'image'=>$link
+            'image'=>$link,
+            'user_id' => auth()->id()
         ]);
         return redirect('/');
     }
