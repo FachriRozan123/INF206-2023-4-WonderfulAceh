@@ -41,7 +41,8 @@ Route::get('/category/{slug}',[CategoryController::class, 'place']);
 // web.php
 
 Route::get('/search', [TempatWisataController::class, 'searchByName']);
-
+Route::get('/thisorthat', [TempatWisataController::class, 'thisorthat']);
+Route::post('/store-answer', [TempatWisataController::class, 'storeAnswer'])->name('storeAnswer');
 Route::get('/addTempat', function () {
     return view('addTempat');
 });
@@ -52,9 +53,9 @@ Route::resource('tour_guide',TourGuideController::class);
 Route::get('/addTourGuide', function () {
     return view('addTourGuide');
 });
-Route::get('/thisorthat', function () {
-    return view('thisorthat');
-});
+// Route::get('/thisorthat', function () {
+//     return view('thisorthat');
+// });
 Route::get('/nama_category', function () {
     return view('nama_category');
 });

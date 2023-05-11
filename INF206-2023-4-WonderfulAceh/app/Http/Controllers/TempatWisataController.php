@@ -64,5 +64,20 @@ if ($category) {
         ]);
         return redirect('/');
     }
-
+    public function thisorthat(){
+        $category = DB::table('category')->get();
+        return view('thisorthat.thisorthat', ['category' => $category,]);
+    }
+    public function storeAnswer(Request $request)
+    {
+        $answer1 = $request->input('answer1');
+        $answer2 = $request->input('answer2');
+        $answer3 = $request->input('answer3');
+        $tempat1 = TempatWisata::where('category_id','LIKE',$answer1)->get();
+        $tempat2= TempatWisata::where('category_id','LIKE',$answer2)->get();
+        $tempat3 = TempatWisata::where('category_id','LIKE',$answer3)->get();
+        return view('thisorthat.hasil', ['tempat1' => $tempat1,'tempat2' => $tempat2,'tempat3' => $tempat3]);
+        // Lakukan operasi lain dengan nilai jawaban yang didapatkan
+    }
+    
 }
