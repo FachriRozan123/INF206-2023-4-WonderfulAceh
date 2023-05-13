@@ -5,7 +5,7 @@ use App\Http\Controllers\TempatWisataController;
 use App\Http\Controllers\TourGuideController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\RekomendasiController;
-/*
+/*KO
 |--------------------------------------------------------------------------
 | Web Routes
 |--------------------------------------------------------------------------
