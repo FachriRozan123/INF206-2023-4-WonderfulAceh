@@ -16,6 +16,6 @@ class CategoryController extends Controller
     {
         $category = Category::where('slug',$slug)->get();
         $tempat_wisata=TempatWisata::where('category_id',$category[0]->id)->get();
-        return view('category.nama_category',['tempat_wisata'=>$tempat_wisata]);
+        return view('category.nama_category',['tempat_wisata'=>$tempat_wisata,'category'=>$category]);
     }
 }

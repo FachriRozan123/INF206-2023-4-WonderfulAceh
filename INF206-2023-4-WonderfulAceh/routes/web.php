@@ -5,7 +5,7 @@ use App\Http\Controllers\TempatWisataController;
 use App\Http\Controllers\TourGuideController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\RekomendasiController;
-/*
+/*KO
 |--------------------------------------------------------------------------
 | Web Routes
 |--------------------------------------------------------------------------
@@ -20,22 +20,22 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::middleware([
-    'auth:sanctum',
-    config('jetstream.auth_session'),
-    'verified'
-])->group(function () {
-    Route::get('/', function () {
-        return redirect('/welcome');
-    });
-    Route::get('/welcome', function () {
-        return view('welcome');
-    });
-    Route::get('/rekomendasi', [RekomendasiController::class, 'index'])->name('rekomendasi.index');
+// // Route::middleware([
+// //     'auth:sanctum',
+// //     config('jetstream.auth_session'),
+// //     'verified'
+// // ])->group(function () {
+// //     Route::get('/', function () {
+// //         return redirect('/welcome');
+// //     });
+// //     Route::get('/welcome', function () {
+// //         return view('welcome');
+// //     });
+//     Route::get('/rekomendasi', [RekomendasiController::class, 'index'])->name('rekomendasi.index');
 
-    // Rute untuk hasil pencarian
-    Route::get('/hasil-pencarian/{keyword}', [HasilPencarianController::class, 'index'])->name('hasil_pencarian');
-});
+//     // Rute untuk hasil pencarian
+//     Route::get('/hasil-pencarian/{keyword}', [HasilPencarianController::class, 'index'])->name('hasil_pencarian');
+// // });
 Route::get('/category',[CategoryController::class,'index']);
 Route::get('/category/{slug}',[CategoryController::class, 'place']);
 // web.php

@@ -23,7 +23,7 @@ class TourGuideController extends Controller
     public function store(Request $request)
     {   
         $tempat_wisata = DB::table('tempat_wisata')
-    ->where('tempat_wisata', 'LIKE', '%' . $request->nama_tempat . '%')
+    ->where('id', 'LIKE', '%' . $request->id . '%')
     ->first();
 
 $tempat_wisata_id = null;
