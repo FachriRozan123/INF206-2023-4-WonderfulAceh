@@ -22,6 +22,7 @@
         margin: 100px 20px; /* Sesuaikan nilai margin kiri-kanan dan atas-bawah */
         display: flex;
         flex-direction: column;
+        margin-top: 10px;
       }
     </style>
     
@@ -29,8 +30,8 @@
     
     <body class="font-sans text-gray-900 antialiased">
         <div class="min-h-screen flex flex-col sm:justify-center items-center pt-6 sm:pt-0 bg-gray-100 bg-cover bg-center" style="background-image: url(https://www.toursabang.co.id/wp-content/uploads/2022/03/pantai.gif)">
-            <img src="img/logowondeful.png" style="height: 50%; width: 7%;">
-            <a href="../../index2.html" class="flex items-center mb-6 text-2xl font-semibold text-gray-900 dark:text-white">
+            <img src="img/logowondeful.png" style="height: 50%; width: 7%; margin-top: 60px;">
+            <a href="../../index2.html" class="flex items-center mb-6 text-2xl font-semibold text-gray-100 ">
                 Wonderful Aceh
             </a>
 

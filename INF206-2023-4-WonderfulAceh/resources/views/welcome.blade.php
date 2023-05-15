@@ -36,15 +36,16 @@
 </head>
 
 <body>
-    <div style="margin: 35px; font-size:24px; text-align: justify;">
-     <p style="font-weight: bold; font-family: 'Merriweather'; color:black; font-size: 18px;"> 
-            Selamat datang di Wonderful Aceh! 
-            <br>Jelajahi keindahan alam dan budaya Aceh yang memukau. 
-            <br>Nikmati pesona wisata yang tak tertandingi dengan pengalaman yang tak terlupakan. 
-            <br>Temukan destinasi menakjubkan dan kenikmatan kuliner yang lezat.
-            <br>
-        </p>
-        <button href="category/category" class="jelajahi-btn">Jelajahi Destinasi</button>
-    </div>
+<div style="margin: 35px; font-size:24px; text-align: justify;">
+  <p style="font-weight: bold; font-family: 'Merriweather'; color:black; font-size: 18px;"> 
+    Selamat datang di Wonderful Aceh! 
+    <br>Jelajahi keindahan alam dan budaya Aceh yang memukau. 
+    <br>Nikmati pesona wisata yang tak tertandingi dengan pengalaman yang tak terlupakan. 
+    <br>Temukan destinasi menakjubkan dan kenikmatan kuliner yang lezat.
+    <br>
+  </p>
+  <button onclick="location.href='/register';" class="jelajahi-btn">Jelajahi Destinasi</button>
+</div>
+
 </html>
 @endsection

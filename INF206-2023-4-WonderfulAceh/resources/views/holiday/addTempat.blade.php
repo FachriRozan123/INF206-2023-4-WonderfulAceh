@@ -2,6 +2,8 @@
 
 @section('content')
     <div class="col">
+        <br>
+        <br>
         <h2>DAFTAR TEMPAT WISATA</h2>
         <form action="{{ route('holiday.store') }}" method="POST" enctype="multipart/form-data">
             @csrf
@@ -54,11 +56,11 @@
                 </div>
             </div>
             <div class="form-group row">
-                <div class="col-sm-10">
-                    <button type="submit" class="btn btn-primary float-right" style="margin-right: 5px;">Daftar</button>
-                    <a href="/" class="btn btn-secondary float-right" style="margin-left: 5px;">Cancel</a>
-                </div>
+            <div class="col-sm-10">
+                <button type="submit" class="btn btn-primary float-right" style="margin-right: 10px;">Daftar</button>
+                <a href="/" class="btn btn-secondary float-right" style="margin-right: 5px;">Cancel</a>
             </div>
+         </div>
         </form>
     </div>
 @endsection
