@@ -16,6 +16,21 @@ class TempatWisataController extends Controller
             return view('holiday.index')
             ->with('tempat_wisata',$tempat_wisata);
     }
+    public function place($slug)
+    {
+        $tempat = TempatWisata::where('slug','LIKE',$slug)->get();
+        return view('holiday.tempat',['tempat'=>$tempat]);
+    }
+
+    public function searchByName(Request $request)
+    {
+        $query = $request->input('query');
+        
+        $tempat_wisata = TempatWisata::where('nama_tempat', 'LIKE', "%$query%")->get();
+        
+        return view('holiday.search', compact('tempat_wisata'));
+    }
+    
     public function create()
     {
         $category = DB::table('category')->get();
@@ -32,24 +47,37 @@ $category_id = null;
 if ($category) {
     $category_id = $category->id;
 }        
-        // $array = Category::find('category',$request->category);
-        // dd($category);
-
-        // $request['category'] =$array->id;
        if($request->file('image')){
-            $link = 'img/'.time().'-'.$request->image->getClientOriginalName();
+            $link = 'storage/img/'.time().'-'.$request->image->getClientOriginalName();
             $request->image->move('storage/img', $link);
        }
         TempatWisata::create([
+            'slug'=>strtolower(str_replace(' ', '_', $request->nama_tempat)),
             'nama_tempat'=>$request['nama_tempat'],
             'alamat'=>$request['alamat'],
             'nama_pemilik'=>$request['nama_pemilik'],
             'nomor_pemilik'=>$request['nomor_pemilik'],
             'category_id'=>$category_id,
             'deskripsi'=>$request['deskripsi'],
-            'image'=>$link
+            'image'=>$link,
+            'user_id' => auth()->id()
         ]);
         return redirect('/');
     }
-
+    public function thisorthat(){
+        $category = DB::table('category')->get();
+        return view('thisorthat.thisorthat', ['category' => $category,]);
+    }
+    public function storeAnswer(Request $request)
+    {
+        $answer1 = $request->input('answer1');
+        $answer2 = $request->input('answer2');
+        $answer3 = $request->input('answer3');
+        $tempat1 = TempatWisata::where('category_id','LIKE',$answer1)->get();
+        $tempat2= TempatWisata::where('category_id','LIKE',$answer2)->get();
+        $tempat3 = TempatWisata::where('category_id','LIKE',$answer3)->get();
+        return view('thisorthat.hasil', ['tempat1' => $tempat1,'tempat2' => $tempat2,'tempat3' => $tempat3]);
+        // Lakukan operasi lain dengan nilai jawaban yang didapatkan
+    }
+    
 }

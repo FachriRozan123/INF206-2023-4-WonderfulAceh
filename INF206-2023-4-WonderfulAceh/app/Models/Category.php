@@ -15,8 +15,8 @@ class Category extends Model
      */
 
      protected $table = 'category';
-    public function tempatwisata(): BelongsTo
+    public function tempatwisata()
     {
-        return $this->belongsTo(TempatWisata::class);
+        return $this->hasOne(TempatWisata::class);
     }
 }

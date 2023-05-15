@@ -26,15 +26,21 @@
         </div>
 
         <div class="flex items-center justify-end mt-4">
-            @if (Route::has('password.request'))
-                <a class="underline text-sm text-white hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" href="{{ route('password.request') }}">
-                    {{ __('Lupa kata sandi?') }}
-                </a>
-            @endif
+    @if (Route::has('password.request'))
+        <a class="underline text-sm text-white hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" href="{{ route('password.request') }}">
+            {{ __('Lupa kata sandi?') }}
+        </a>
+    @endif
+</div>
 
-            
-        </div>
-        <div class="flex items-center justify-center mt-6">
+<div class="flex items-center justify-end mt-2">
+    <a class="underline text-sm text-white hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" href="{{ route('register') }}">
+        {{ __('Belum memiliki akun?') }}
+    </a>
+</div>
+<br>
+
+        <div class="flex items-center justify-center mt-2">
         <x-button style="background-color:#FFFFFF;color:#2148C0">
                 {{ __('Masuk') }}
             </x-button>
