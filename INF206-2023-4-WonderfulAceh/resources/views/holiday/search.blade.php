@@ -46,8 +46,8 @@
         </div>
         <div class="col">
           <div class="card-body">
-            <h5 class="card-title">Nama : {{$item->nama_tempat}}</h5>
-            <h5 class="card-title">Kategori : {{$item->category->category}}</h5>
+            <h5 class="card-title">Nama: {{$item->nama_tempat}}</h5>
+            <h5 class="card-title">Kategori: {{$item->category->category}}</h5>
           </div>
         </div>
       </div>

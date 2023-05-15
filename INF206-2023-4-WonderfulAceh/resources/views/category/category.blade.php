@@ -3,18 +3,20 @@
 @section('content')
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+            integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/348c676099.js" crossorigin="anonymous"></script>
     <title>Category</title>
+    
 
     <style>
-        body {
+        .body {
             background-color: #065f44
         }
         .card {
@@ -84,9 +86,7 @@
                 padding: 10px;
             }
         }
-    </style>
-<style>
-    html, body {
+        html, body {
         height: 100%;
         margin: 0;
         padding: 0;
@@ -125,9 +125,11 @@
             align-items: center; /* Mengatur konten agar berada di tengah-tengah secara horizontal */
         }
     </style>
-</head>
+    </head>
 
-<body position="center">
+
+
+    <body>
     <div class="container mt-2">
     <div class="row">
         @foreach ($category as $item)
@@ -135,15 +137,16 @@
             <div class="card card-block">
               <a href="{{'/category/'.$item->slug }}">
                 <h4 class="card-title text-center mt-3 mb-3"><i class="material-icons">{{$item->category}}</i></h4>
-                <img src="{{asset($item->image)}}" style="background-position: center; width: 290px; height: 195px;">
+                <img src="{{asset($item->image)}}" style="background-position: center; width: 285px; height: 195px;">
               </a>
             </div>
           </div>
         @endforeach
     </div>
-    <footer class="bg-white bg-opacity-50 text-center bottom-full">
-      <p>Copyright 2023 &copy; WonderfulAceh</p>
-    </footer>
-</body>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+             </script>
+    </body>
 </html>
 @endsection
