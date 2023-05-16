@@ -49,9 +49,9 @@
           </div>
           <div class="col">
             <div class="card-body">
-              <h5 class="card-title">Nama :</h5>
-              <h5 class="card-title">Kategori :</h5>
-              <h5 class="card-title">0.0/0.5 :</h5>
+              <h5 class="card-title">Nama:</h5>
+              <h5 class="card-title">Kategori:</h5>
+              <h5 class="card-title">0.0/0.5:</h5>
             </div>
           </div>
         </div>
@@ -68,9 +68,10 @@
           </div>
           <div class="col">
             <div class="card-body">
-              <h5 class="card-title">Nama :</h5>
-              <h5 class="card-title">Kategori : Pantai</h5>
-              <h5 class="card-title">0.0/0.5 :</h5>
+              <br>
+              <h5 class="card-title" style="font-size: 20px;">Nama:</h5>
+              <h5 class="card-title" style="font-size: 20px;">Kategori: Pantai</h5>
+              <h5 class="card-title" style="font-size: 20px;">0.0/0.5:</h5>
             </div>
           </div>
         </div>

@@ -6,14 +6,12 @@
     <meta name="description" content="">
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
-
     <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- Bootstrap core CSS -->
     <link href="https://getbootstrap.com/docs/4.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <style>
       .navbar_style{
         color:#2B6363;
@@ -26,7 +24,6 @@
         -ms-user-select: none;
         user-select: none;
       }
-
       @media (min-width: 768px) {
         .bd-placeholder-img-lg {
           font-size: 3.5rem;
@@ -36,7 +33,6 @@
       /* GLOBAL STYLES
       -------------------------------------------------- */
       /* Padding below the footer and lighter body text */
-
       body {
         padding-top: 3rem;
         padding-bottom: 3rem;
@@ -48,10 +44,8 @@
         color: #0000;
       }
 
-
       /* CUSTOMIZE THE CAROUSEL
       -------------------------------------------------- */
-
       /* Carousel base class */
       .carousel {
         margin-bottom: 4rem;
@@ -61,7 +55,6 @@
         bottom: 3rem;
         z-index: 10;
       }
-
       /* Declare heights because of positioning of img element */
       .carousel-item {
         height: 32rem;
@@ -74,10 +67,8 @@
         height: 32rem;
       }
 
-
       /* MARKETING CONTENT
       -------------------------------------------------- */
-
       /* Center align the text within the three columns below the carousel */
       .marketing .col-lg-4 {
         margin-bottom: 1.5rem;
@@ -91,14 +82,11 @@
         margin-left: .75rem;
       }
 
-
       /* Featurettes
       ------------------------- */
-
       .featurette-divider {
         margin: 5rem 0; /* Space out the Bootstrap <hr> more */
       }
-
       /* Thin out the marketing headings */
       .featurette-heading {
         font-weight: 300;
@@ -106,10 +94,8 @@
         letter-spacing: -.05rem;
       }
 
-
       /* RESPONSIVE CSS
       -------------------------------------------------- */
-
       @media (min-width: 40em) {
         /* Bump up size of carousel content */
         .carousel-caption p {
@@ -117,7 +103,6 @@
           font-size: 1.25rem;
           line-height: 1.4;
         }
-
         .featurette-heading {
           font-size: 50px;
         }
@@ -128,142 +113,131 @@
           margin-top: 7rem;
         }
       }
-
-    </style>
-<style>
-    html, body {
+      html, body {
         height: 100%;
         margin: 0;
         padding: 0;
-    }
-
-    .content {
-        min-height: 100%;
-        /* tambahkan padding-bottom untuk memberi ruang pada footer */
-        padding-bottom: 50px; /* ganti angka sesuai kebutuhan */
-    }
-
-    footer {
-        position: fixed;
-        left: 0;
-        bottom: 0;
-        width: 100%;
-        /* tambahkan padding dan gaya lain sesuai kebutuhan */
-        padding: 0px;
-        background-color: #8BACAA;
-        text-align: center;
-    }
-
-    footer p {
-        margin-top: 0;
-        margin-bottom: 0;
-    }
-</style>
-
-
+      }
+      .content {
+          min-height: 100%;
+          /* tambahkan padding-bottom untuk memberi ruang pada footer */
+          padding-bottom: 50px; /* ganti angka sesuai kebutuhan */
+      }
+      footer {
+          position: fixed;
+          left: 0;
+          bottom: 0;
+          width: 100%;
+          /* tambahkan padding dan gaya lain sesuai kebutuhan */
+          padding: 0px;
+          background-color: #8BACAA;
+          text-align: center;
+      }
+      footer p {
+          margin-top: 0;
+          margin-bottom: 0;
+      }
+    </style>
   </head>
+
   <body style="background-color: #234741;">
     <header>
-
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color: #2B6363">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse ml-auto" id="navbarCollapse">
-  <ul class="navbar-nav mr-auto">
-    <li class="nav-item">
-      <a class="navbar-brand" href="{{ url('/') }}">
-        <div class="d-flex align-items-center">
-          <img src="img/logowondeful.png" style="height: 50%; width: 7%;">
-          <span class="ml-2">Wonderful Aceh</span>
-        </div>
-      </a>
-    </li>
-  </ul>
-</div>
-
-              
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color: #2B6363">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse ml-auto" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="navbar-brand" href="{{ url('/') }}">
+                <div class="d-flex align-items-center">
+                  <img src="img/logowondeful.png" style="height: 50%; width: 7%;">
+                  <span class="ml-2">Wonderful Aceh</span>
+                </div>
+              </a>
             </li>
           </ul>
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
+        </div>      
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
                 <a class="nav-link" href="/category">Category</a>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Daftar
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="/addTempat">Tempat Wisata</a>
-                  <a class="dropdown-item" href="/addTourGuide">Tour Guide</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/thisorthat">This or That</a>
-            </li>
-            <!-- <form action="{{ route('rekomendasi.search') }}" method="GET" class="search-form">
-   
-    <input type="text" name="keyword" placeholder="Search" class="form-control">
-    <button class="btn btn-outline-success text-white my-2 my-sm-0" type="submit">Search</button>
-</form> -->
-<form class="form-inline mt-2 mt-md-0" action="{{ route('rekomendasi.search') }}" method="GET">
-              <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-              <form action="/search">
-              @csrf
-                  <button class="btn btn-outline-success text-white my-2 my-sm-0" type="submit">Search</button>
-              </form>
-
-
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Daftar
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="{{ route('holiday.create') }}">Tempat Wisata</a>
+              <a class="dropdown-item" href="{{ route('tour_guide.create') }}">Tour Guide</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/thisorthat">This or That</a>
+          </li>
+          <form class="form-inline mt-2 mt-md-0"  action="/search" method="GET">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search" name="query">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit" n>Search</button>
           </form>
-                <!-- Authentication Links -->
-                @if (Route::has('login'))
-                    @guest
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
-                        </li>
-                        @if (Route::has('register'))
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
-                            </li>
-                        @endif
-                    @else
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{ route('logout') }}"
-                                onclick="event.preventDefault();
-                                document.getElementById('logout-form').submit();">
-                                {{ __('Logout') }}
-                            </a>
-
-                            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                                @csrf
-                            </form>
-                        </li>
-                    @endguest
-                @endif
+          <!-- Authentication Links -->
+          @if (Route::has('login'))
+            @guest
+              <li class="nav-item">
+                <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+              </li>
+              @if (Route::has('register'))
+                <li class="nav-item">
+                  <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+                </li>
+              @endif
+              @else
+                <li class="nav-item dropdown" style="margin-right:10px;">
+                  <div style="position: relative; " class="nav-link dropdown-toggle" role="button"
+                      data-bs-toggle="dropdown" aria-expanded="false">
+                      <i class="fas fa-user-circle fa-2x me-2 text-white" style="list-style: none;"></i>
+                      <span class="text-white" style="position: relative;bottom: px;"></span>
+                  </div>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Profile</a>
+                    <a class="dropdown-item" href="#">Setting</a>
+                    <a class="dropdown-item" href="{{ route('logout') }}"
+                      onclick="event.preventDefault();
+                      document.getElementById('logout-form').submit();">
+                        Logout
+                    </a>
+                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                      @csrf
+                    </form>
+                  </div>
+                </li>
+            @endguest
+          @endif
         </ul>
-    </div>
-</nav>
-<main role="main">
-    <div class="container mt-5">
-        <div class="row">
-            <!-- Buttons -->
-            @yield('buttons')
+      </nav>
+    </header>
+
+    <main role="main">
+        <div class="container mt-5">
+            <div class="row">
+                <!-- Buttons -->
+                @yield('buttons')
+            </div>
         </div>
-    </div>
-    <div class="container mt-1">
-        <div class="row">
-            <!-- Content -->
-            @yield('content')
+        <div class="container mt-1">
+            <div class="row">
+                <!-- Content -->
+                @yield('content')
+            </div>
         </div>
-    </div>
-</main>
-<!-- FOOTER -->
-  
-<footer class="text-center pt- ">
-        <p> Copyright 2023 &copy; WonderfulAceh</p>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="text-center pt- " style="color: white;">
+      <p> Copyright 2023 &copy; WonderfulAceh</p>
     </footer>
+
+    <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script>window.jQuery || document.write('<script src="https://getbootstrap.com/docs/4.3/assets/js/vendor/jquery-slim.min.js"><\/script>')</script><script src="https://getbootstrap.com/docs/4.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
-    <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
   </body>
 </html>

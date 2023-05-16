@@ -13,6 +13,7 @@ return new class extends Migration
 {
     Schema::create('tempat_wisata', function (Blueprint $table) {
         $table->bigIncrements('id')->comment('The Primary Key for the table.');
+        $table->string('slug');
         $table->string('nama_tempat');
         $table->string('alamat');
         $table->string('nama_pemilik');
@@ -20,6 +21,7 @@ return new class extends Migration
         $table->foreignId('category_id');
         $table->text('deskripsi');
         $table->string('image');
+        $table->foreignId('user_id');
         $table->timestamps();
     });
     
