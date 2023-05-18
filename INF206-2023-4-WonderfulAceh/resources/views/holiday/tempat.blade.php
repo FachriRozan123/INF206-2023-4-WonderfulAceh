@@ -17,7 +17,8 @@
     {{-- {{dd($tempat[0]->category->category);}}  --}}
     <main style="background-color:#1f4847 !important;">
         <div style="text-align:left;">
-            <h1 style="font-size:2rem;color:rgb(255, 255, 255); padding-left: 20px;">
+        <br>
+            <h1 style="font-size:2rem;color:rgb(255, 255, 255); padding-left: 00px;">
                 {{ $tempat[0]->nama_tempat }}
             </h1>
             <div class="row" style="justify-content: center;">
@@ -41,29 +42,34 @@
     </main>
 </body>
 
-
+           <body>
+            <br>
             <br>
             <div class="row" style="display: flex; justify-content: space-between;">
-                <div class="col" style="position: relative; left: 20px;">
+                <div class="col" style="position: relative; left: 0px;">
                     <a class="text-decoration-none">
+                        <br>
                         <h1 style="font-size: 2rem; color: rgb(255, 255, 255); padding-left: 2px;">Pemilik Tempat</h1>
                         <div style="display: flex; align-items: center; height: 200px; width: 320px; background-color: rgb(255, 253, 253); border-radius: 0%; overflow: hidden; padding: 15px;">
                             <img src="/img/user.png" style="height: 110px; width: 40%;">
                             <div style="margin-left: 20px;">
                                 <h3 style="color: black;">{{ $tempat[0]->nama_pemilik }}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h3>
-                                <img src="/img/chat.png" style="height: 60px; width: 30%; margin-top: 10px;">
+                                <img src="/img/chat.png" style="height: 60px; width: 30%; margin-top: 10px; cursor: pointer;" onclick="window.location.href = '/chatify'"
+                                 onmouseover="this.style.opacity=0.7" onmouseout="this.style.opacity=1">
                             </div>
                         </div>
                     </a>
                 </div>
                 <div class="col" style="position: relative; margin-left: auto; right: -450px;">
                     <a class="text-decoration-none">
+                        <br>
                         <h1 style="font-size: 2rem; color: rgb(255, 255, 255); padding-left: 2px;">Tour Guide</h1>
                         <div style="display: flex; align-items: center; height: 200px; width: 320px; background-color: rgb(255, 253, 253); border-radius: 0%; overflow: hidden; padding: 15px;">
                             <img src="/img/user.png" style="height: 110px; width: 40%;">
                             <div style="margin-left: 20px;">
                                 <h3 style="color: black;">Personal&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h3>
-                                <img src="/img/chat.png" style="height: 60px; width: 30%; margin-top: 10px;">
+                                <img src="/img/chat.png" style="height: 60px; width: 30%; margin-top: 10px; cursor: pointer;" onclick="window.location.href = '/chatify'"
+                                 onmouseover="this.style.opacity=0.7" onmouseout="this.style.opacity=1">
                             </div>
                         </div>
                     </a>
