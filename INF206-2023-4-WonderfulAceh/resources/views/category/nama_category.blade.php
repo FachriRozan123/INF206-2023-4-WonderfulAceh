@@ -29,9 +29,8 @@
   <body>
   <main class="w-screen h-screen p-5" style="background-color: #234741">
     <p class="text-white ml-[100pt] text-xl font-bold font-serif p-2">
-        {{$category[0]->category}}
+        {{$tempat_wisata[0]->tempat_wisata}}
     </p>
-    @if($tempat_wisata)
     @foreach ($tempat_wisata as $item)
     <a href="{{'/tempat/'.$item->slug}}">
     <div class="card mb-3" style="max-width: 100%">
@@ -46,8 +45,8 @@
         </div>
         <div class="col">
           <div class="card-body">
-            <h5 class="card-title">Nama : {{$item->nama_tempat}}</h5>
-            <h5 class="card-title">Kategori : {{$item->category->category}}</h5>
+            <h5 class="card-title">Nama: {{$item->nama_tempat}}</h5>
+            <h5 class="card-title">Kategori: {{$item->category->category}}</h5>
           </div>
         </div>
       </div>
@@ -55,7 +54,6 @@
       @endforeach
     </div>
     </div>
-    @endif
   </main>
   <footer class="bg-white bg-opacity-50 text-center bottom-full">
     <p>Copyright 2023 &copy; WonderfulAceh</p>

@@ -75,7 +75,7 @@
     </head>
 
     <body>
-        <main style=" background-color:#1f4847  !important;">
+        <main style=" background-color:#234741  !important;">
             <br>
             <br>
             <br>
@@ -132,6 +132,8 @@
                         <button type="submit" class="btn btn-primary">Submit</button>
                     </div>
                 </form>
+                <br>
+                <br>
         </main>
 
 

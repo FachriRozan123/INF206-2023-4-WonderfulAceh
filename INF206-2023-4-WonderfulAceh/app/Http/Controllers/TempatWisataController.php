@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\TempatWisata;
-use App\Models\TourGuide;
 use App\Models\Category;
 use Illuminate\Support\Facades\DB;
 
@@ -19,11 +18,8 @@ class TempatWisataController extends Controller
     }
     public function place($slug)
     {
-        $tempat = TempatWisata::where('slug', 'LIKE', $slug)->first();
-    if ($tempat) {
-    $tour_guide = TourGuide::where('nama_tempat_id', $tempat->id)->get();
-    }
-        return view('holiday.tempat',['tempat'=>$tempat,'tour_guide'=>$tour_guide]);
+        $tempat = TempatWisata::where('slug','LIKE',$slug)->get();
+        return view('holiday.tempat',['tempat'=>$tempat]);
     }
 
     public function searchByName(Request $request)
@@ -51,7 +47,6 @@ $category_id = null;
 if ($category) {
     $category_id = $category->id;
 }        
-
        if($request->file('image')){
             $link = 'storage/img/'.time().'-'.$request->image->getClientOriginalName();
             $request->image->move('storage/img', $link);

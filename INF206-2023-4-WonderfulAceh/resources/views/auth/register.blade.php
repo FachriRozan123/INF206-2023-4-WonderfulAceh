@@ -8,8 +8,8 @@
         @csrf
 
  
-        <div class="flex items-center justify-center">
-    <p class="block mt-1 w-full pl-8" style="background-color:#FFFFFF;color:#2148C0; text-align:center; border: 2px solid #FFFFFF; border-radius: 5px;">Isi data dengan valid</p>
+        <div class="flex items-center justify-center" style="height: 40px; background-color: #f5f5f5; border-radius: 5px;">
+    <p class="block mt-1 w-full" style="background-color:#FFFFFF;color:#2148C0; text-align:center; border: 2px solid #FFFFFF; ">Isi data dengan valid</p>
 </div>
 
 
@@ -55,7 +55,7 @@
         @endif
             <div class="flex items-center justify-end mt-4">
                 <a class="underline text-sm text-white hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" href="{{ route('login') }}">
-                    {{ __('Already registered?') }}
+                    {{ __('Sudah memiliki akun?') }}
                 </a>
                 </div>
                 <div class="flex items-center justify-center mt-4">
