@@ -160,7 +160,7 @@
         </div>      
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-                <a class="nav-link" href="/category">Category</a>
+                <a class="nav-link" href="/category">Kategori</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -175,8 +175,8 @@
             <a class="nav-link" href="/thisorthat">This or That</a>
           </li>
           <form class="form-inline mt-2 mt-md-0"  action="/search" method="GET">
-            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search" name="query">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit" n>Search</button>
+            <input class="form-control mr-sm-2" type="text" placeholder="Cari" aria-label="Cari" name="query">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit" n>Cari</button>
           </form>
           <!-- Authentication Links -->
           @if (Route::has('login'))
@@ -197,8 +197,7 @@
                       <span class="text-white" style="position: relative;bottom: px;"></span>
                   </div>
                   <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Profile</a>
-                    <a class="dropdown-item" href="#">Setting</a>
+                    <a class="dropdown-item" href="AboutUs">AboutUs</a>
                     <a class="dropdown-item" href="{{ route('logout') }}"
                       onclick="event.preventDefault();
                       document.getElementById('logout-form').submit();">

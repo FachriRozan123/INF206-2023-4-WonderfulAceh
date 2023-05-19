@@ -6,7 +6,7 @@ return [
     | Messenger display name
     |-------------------------------------
     */
-    'name' => env('CHATIFY_NAME', 'Mulai chat anda'),
+    'name' => env('CHATIFY_NAME', 'Chatify Messenger'),
 
     /*
     |-------------------------------------
@@ -91,8 +91,8 @@ return [
     |-------------------------------------
     */
     'colors' => (array) [
-        '#2196F3',
         '#2180f3',
+        '#2196F3',
         '#00BCD4',
         '#3F51B5',
         '#673AB7',

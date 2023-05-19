@@ -22,8 +22,8 @@ body {
   /* Light theme variables */
   --primary-bg-color: #fff;
   --secondary-bg-color: #f7f7f7;
-  --border-color: #cfcfcf;
-  --messagingView-bg-color: #949494;
+  --border-color: #eee;
+  --messagingView-bg-color: #f6f7f9;
   --scrollbar-thumb-color: #cfcfcf;
   --modal-bg-color: #fff;
   --send-input-icons-color: #4b4b4b;
@@ -56,7 +56,7 @@ body {
   border-left-color: var(--primary-color) !important;
 }
 
-/internet connection/
+/*internet connection*/
 .internet-connection {
   display: none;
   background: rgba(0, 0, 0, 0.76);
@@ -75,7 +75,7 @@ body {
   display: none;
 }
 
-/green background RGBA/
+/*green background RGBA*/
 .successBG-rgba {
   background: rgba(54, 180, 36, 0.76) !important;
 }

@@ -1,4 +1,4 @@
-/app scroll/
+/*app scroll*/
 .app-scroll::-webkit-scrollbar-thumb,
 .app-scroll-thin::-webkit-scrollbar-thumb {
     background: var(--scrollbar-thumb-color);
@@ -42,7 +42,7 @@
     background: var(--messagingView-bg-color);
 }
 .m-header-messaging {
-    background-color: #2B6363;
+    background: var(--primary-bg-color);
 }
 .messenger-infoView {
     background: var(--primary-bg-color);
