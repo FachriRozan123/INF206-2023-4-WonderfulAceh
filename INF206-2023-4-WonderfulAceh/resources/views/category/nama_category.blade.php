@@ -31,6 +31,7 @@
     <p class="text-white ml-[100pt] text-xl font-bold font-serif p-2">
         {{$tempat_wisata[0]->tempat_wisata}}
     </p>
+    @if($tempat_wisata)
     @foreach ($tempat_wisata as $item)
     <a href="{{'/tempat/'.$item->slug}}">
     <div class="card mb-3" style="max-width: 100%">
@@ -52,6 +53,7 @@
       </div>
     </a>
       @endforeach
+      @endif
     </div>
     </div>
   </main>
